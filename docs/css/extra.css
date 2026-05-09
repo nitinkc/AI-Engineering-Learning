@@ -1,0 +1,16 @@
+details {
+  margin: 1.2em 0;
+  padding-left: 1em;
+  border-left: 4px solid #00897b;
+}
+
+details summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+abbr[title] {
+  text-decoration: underline dotted;
+  cursor: help;
+}
+

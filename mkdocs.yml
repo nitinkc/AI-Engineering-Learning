@@ -1,0 +1,103 @@
+site_name: AI Engineer Interview Playbook
+site_description: Step-by-step learning, interview preparation, and retention labs for AI Engineer, Agentic AI, and LLMOps roles
+site_author: Nitin Chaurasia
+
+theme:
+  name: material
+  icon:
+    previous: fontawesome/solid/angle-left
+    next: fontawesome/solid/angle-right
+  palette:
+    - scheme: default
+      primary: brown
+      accent: brown
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: brown
+      accent: brown
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+    - header.autohide
+
+nav:
+  - Home: index.md
+
+  - "01 · Foundations":
+    - Learning Path: "01-foundations/step-by-step-learning-path.md"
+    - Weekly Revision System: "01-foundations/weekly-revision-system.md"
+    - Learning Plan: "01-foundations/ai_engineer_learning_revision_plan.md"
+    - STAR Method: "01-foundations/star_stories_ai_engineer_reference.md"
+
+  - "02 · Technical Depth":
+    - RAG Debugging and Quality: "02-technical-depth/rag-debugging-and-quality.md"
+    - Agentic Workflows and Tools: "02-technical-depth/agentic-workflows-and-tools.md"
+    - Evals, Observability, and Production: "02-technical-depth/evals-observability-and-production.md"
+
+  - "03 · Interview System":
+    - STAR+T System: "03-interview-system/star-plus-t-system.md"
+    - Mock Loop and Answer Drills: "03-interview-system/mock-loop-and-answer-drills.md"
+
+  - "04 · Labs Retention":
+    - Incremental Learning Labs: "04-labs-retention/incremental-learning-labs.md"
+    - Lab Integration Map: "04-labs-retention/lab-integration-map.md"
+
+  - "07 · AI Engineer Playbook":
+    - Overview: "07-ai-engineer-playbook/index.md"
+    - 01 Learning Path: "07-ai-engineer-playbook/01-learning-path.md"
+    - 02 RAG Debugging and Quality: "07-ai-engineer-playbook/02-rag-debugging-quality.md"
+    - 03 Agentic Workflows: "07-ai-engineer-playbook/03-agentic-workflows.md"
+    - 04 Evals, Observability, Production: "07-ai-engineer-playbook/04-evals-observability-production.md"
+    - 05 STAR Story System: "07-ai-engineer-playbook/05-star-story-system.md"
+    - 06 Interview Sprints and Mock Loops: "07-ai-engineer-playbook/06-interview-sprints-and-mock-loops.md"
+    - 07 Incremental Learning Labs: "07-ai-engineer-playbook/07-incremental-learning-labs.md"
+
+  - "Appendix":
+    - Learning Revision Condensed: "appendix/learning-revision-condensed.md"
+    - STAR Stories Condensed: "appendix/star-stories-condensed.md"
+    - Source Mapping: "appendix/source-mapping.md"
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      disable_indented_code_blocks: true
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
+  - pymdownx.highlight:
+      use_pygments: true
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      base_path: docs
+      check_paths: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - def_list
+  - abbr
+  - pymdownx.arithmatex:
+      generic: true
+      block_tag: 'div'
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
+  - js/mermaid-init.js
+
+extra_css:
+  - css/extra.css
+
