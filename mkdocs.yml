@@ -1,6 +1,8 @@
 site_name: AI Engineer Interview Playbook
 site_description: Step-by-step learning, interview preparation, and retention labs for AI Engineer, Agentic AI, and LLMOps roles
 site_author: Nitin Chaurasia
+docs_dir: docs
+repo_url: https://github.com/nitinkc/AI-Engineering-Learning
 
 theme:
   name: material
@@ -25,6 +27,7 @@ theme:
     - navigation.tabs
     - navigation.sections
     - header.autohide
+#    -  toc.integrate
 
 nav:
   - Home: index.md
@@ -32,7 +35,44 @@ nav:
   - "01 · Foundations":
     - Learning Path: "01-foundations/step-by-step-learning-path.md"
     - Weekly Revision System: "01-foundations/weekly-revision-system.md"
-    - Learning Plan: "01-foundations/ai_engineer_learning_revision_plan.md"
+    - Learning Plan (Reference): "01-foundations/ai_engineer_learning_revision_plan.md"
+    - Daily Learning Plan (4 Weeks): "01-foundations/learning-revision-plan/index.md"
+    - Week 1 · LLM and RAG Core:
+      - Overview: "01-foundations/learning-revision-plan/week-01/index.md"
+      - Day 1: "01-foundations/learning-revision-plan/week-01/day-01-llm-pipeline-map-and-model-basics.md"
+      - Day 2: "01-foundations/learning-revision-plan/week-01/day-02-prompting-patterns-and-guardrails.md"
+      - Day 3: "01-foundations/learning-revision-plan/week-01/day-03-embeddings-and-vector-retrieval-basics.md"
+      - Day 4: "01-foundations/learning-revision-plan/week-01/day-04-rag-architecture-and-citation-grounding.md"
+      - Day 5: "01-foundations/learning-revision-plan/week-01/day-05-rag-quality-debugging.md"
+      - Day 6: "01-foundations/learning-revision-plan/week-01/day-06-multimodal-and-long-context-strategies.md"
+      - Day 7: "01-foundations/learning-revision-plan/week-01/day-07-week-1-consolidation-and-retrieval-drill.md"
+    - Week 2 · Agents and LangGraph:
+      - Overview: "01-foundations/learning-revision-plan/week-02/index.md"
+      - Day 8: "01-foundations/learning-revision-plan/week-02/day-08-agentic-patterns-and-tool-calling.md"
+      - Day 9: "01-foundations/learning-revision-plan/week-02/day-09-planning-memory-and-state-management.md"
+      - Day 10: "01-foundations/learning-revision-plan/week-02/day-10-langgraph-fundamentals.md"
+      - Day 11: "01-foundations/learning-revision-plan/week-02/day-11-multi-agent-coordination.md"
+      - Day 12: "01-foundations/learning-revision-plan/week-02/day-12-human-in-the-loop-and-approvals.md"
+      - Day 13: "01-foundations/learning-revision-plan/week-02/day-13-reliability-hardening-for-agent-systems.md"
+      - Day 14: "01-foundations/learning-revision-plan/week-02/day-14-week-2-consolidation-and-graph-design-review.md"
+    - Week 3 · Evals and Production:
+      - Overview: "01-foundations/learning-revision-plan/week-03/index.md"
+      - Day 15: "01-foundations/learning-revision-plan/week-03/day-15-evaluation-strategy-and-datasets.md"
+      - Day 16: "01-foundations/learning-revision-plan/week-03/day-16-automated-eval-pipelines.md"
+      - Day 17: "01-foundations/learning-revision-plan/week-03/day-17-observability-and-tracing.md"
+      - Day 18: "01-foundations/learning-revision-plan/week-03/day-18-production-safety-and-policy-controls.md"
+      - Day 19: "01-foundations/learning-revision-plan/week-03/day-19-deployment-scaling-and-slos.md"
+      - Day 20: "01-foundations/learning-revision-plan/week-03/day-20-postmortems-and-continuous-improvement.md"
+      - Day 21: "01-foundations/learning-revision-plan/week-03/day-21-week-3-consolidation-and-production-readiness-review.md"
+    - Week 4 · Interview Conversion:
+      - Overview: "01-foundations/learning-revision-plan/week-04/index.md"
+      - Day 22: "01-foundations/learning-revision-plan/week-04/day-22-role-targeting-and-competency-mapping.md"
+      - Day 23: "01-foundations/learning-revision-plan/week-04/day-23-star-story-bank-for-ai-projects.md"
+      - Day 24: "01-foundations/learning-revision-plan/week-04/day-24-portfolio-assembly-and-project-narrative.md"
+      - Day 25: "01-foundations/learning-revision-plan/week-04/day-25-technical-interview-drills.md"
+      - Day 26: "01-foundations/learning-revision-plan/week-04/day-26-behavioral-and-cross-functional-communication.md"
+      - Day 27: "01-foundations/learning-revision-plan/week-04/day-27-full-mock-loop-and-feedback-integration.md"
+      - Day 28: "01-foundations/learning-revision-plan/week-04/day-28-final-synthesis-and-interview-launch-plan.md"
     - STAR Method: "01-foundations/star_stories_ai_engineer_reference.md"
 
   - "02 · Technical Depth":
@@ -49,14 +89,21 @@ nav:
     - Lab Integration Map: "04-labs-retention/lab-integration-map.md"
 
   - "07 · AI Engineer Playbook":
-    - Overview: "07-ai-engineer-playbook/index.md"
-    - 01 Learning Path: "07-ai-engineer-playbook/01-learning-path.md"
-    - 02 RAG Debugging and Quality: "07-ai-engineer-playbook/02-rag-debugging-quality.md"
-    - 03 Agentic Workflows: "07-ai-engineer-playbook/03-agentic-workflows.md"
-    - 04 Evals, Observability, Production: "07-ai-engineer-playbook/04-evals-observability-production.md"
-    - 05 STAR Story System: "07-ai-engineer-playbook/05-star-story-system.md"
-    - 06 Interview Sprints and Mock Loops: "07-ai-engineer-playbook/06-interview-sprints-and-mock-loops.md"
-    - 07 Incremental Learning Labs: "07-ai-engineer-playbook/07-incremental-learning-labs.md"
+    - Overview: "05-ai-engineer-playbook/index.md"
+    - 01 Learning Path: "05-ai-engineer-playbook/01-learning-path.md"
+    - 02 RAG Debugging and Quality: "05-ai-engineer-playbook/02-rag-debugging-quality.md"
+    - 03 Agentic Workflows: "05-ai-engineer-playbook/03-agentic-workflows.md"
+    - 04 Evals, Observability, Production: "05-ai-engineer-playbook/04-evals-observability-production.md"
+    - 05 STAR Story System: "05-ai-engineer-playbook/05-star-story-system.md"
+    - 06 Interview Sprints and Mock Loops: "05-ai-engineer-playbook/06-interview-sprints-and-mock-loops.md"
+    - 07 Incremental Learning Labs: "05-ai-engineer-playbook/07-incremental-learning-labs.md"
+    - 08 Daily Material Map: "05-ai-engineer-playbook/08-daily-material-map.md"
+
+  - "08 · Mini Projects":
+    - Overview: "06-mini-projects/index.md"
+    - Week 1 RAG Foundations Lab: "06-mini-projects/01-week-1-rag-foundations-lab.md"
+    - Week 2 Agent Reliability Lab: "06-mini-projects/02-week-2-agent-reliability-lab.md"
+    - Week 3 Eval and Ops Lab: "06-mini-projects/03-week-3-eval-observability-lab.md"
 
   - "Appendix":
     - Learning Revision Condensed: "appendix/learning-revision-condensed.md"

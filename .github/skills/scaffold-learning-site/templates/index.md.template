@@ -1,0 +1,52 @@
+# {TOPIC} — Learning Guide
+
+> A progressive, self-paced learning guide — from first principles to expert-level understanding.
+
+---
+
+## 🎯 What You'll Learn
+
+This guide takes you from **zero to expert** on {TOPIC}. Each section builds on the last, with clear explanations, diagrams, and math where it matters.
+
+| Section | Focus | Level |
+|---|---|---|
+| **Fundamentals** | Core concepts and vocabulary | 🟢 Beginner |
+| **Intermediate** | How concepts work together | 🟡 Intermediate |
+| **Advanced** | Production patterns & edge cases | 🔴 Advanced |
+| **Reference** | Quick-look cheatsheets | 📋 All levels |
+
+---
+
+## 🗺️ Learning Path
+
+```mermaid
+graph LR
+  A[Getting Started] --> B[Fundamentals]
+  B --> C[Intermediate]
+  C --> D[Advanced]
+  B --> E[Reference]
+  C --> E
+  D --> E
+```
+
+---
+
+## 🚀 How to Use This Guide
+
+1. **Start at [Getting Started](GETTING_STARTED.md)** — check prerequisites
+2. **Work through Fundamentals** — don't skip, concepts build on each other
+3. **Use the Reference section** anytime for quick lookups
+4. **Hover over underlined terms** to see definitions from the glossary
+
+---
+
+## 💡 Why This Guide Exists
+
+{WHY_THIS_EXISTS}
+
+---
+
+*Built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/). Hover over any underlined term to see its definition.*
+
+--8<-- "_abbreviations.md"
+

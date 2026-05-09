@@ -1,3 +1,40 @@
+[data-md-color-scheme="default"] {
+  --mermaid-surface: #f8fbff;
+  --mermaid-border: rgba(25, 118, 210, 0.18);
+  --mermaid-shadow: rgba(15, 23, 42, 0.08);
+  --mermaid-edge-label-bg: #ffffff;
+}
+
+[data-md-color-scheme="slate"] {
+  --mermaid-surface: #111827;
+  --mermaid-border: rgba(100, 181, 246, 0.35);
+  --mermaid-shadow: rgba(15, 23, 42, 0.32);
+  --mermaid-edge-label-bg: #1f2937;
+}
+
+.md-typeset .mermaid {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border: 1px solid var(--mermaid-border);
+  border-radius: 0.75rem;
+  background: var(--mermaid-surface);
+  box-shadow: 0 8px 24px var(--mermaid-shadow);
+}
+
+.md-typeset .mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.md-typeset .mermaid .edgeLabel rect,
+.md-typeset .mermaid .labelBox {
+  fill: var(--mermaid-edge-label-bg) !important;
+  opacity: 1 !important;
+}
+
 details {
   margin: 1.2em 0;
   padding-left: 1em;

@@ -1,0 +1,45 @@
+// mermaid-init.js
+// Converts mermaid fenced code blocks to <div class="mermaid"> and initialises the library.
+// Must be loaded AFTER the Mermaid CDN script in mkdocs.yml extra_javascript.
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Convert <code class="language-mermaid"> blocks to <div class="mermaid">
+  document.querySelectorAll("code.language-mermaid").forEach(function (code) {
+    const text = code.textContent.trim();
+    const mermaidDiv = document.createElement("div");
+    mermaidDiv.className = "mermaid";
+    mermaidDiv.textContent = text;
+
+    // Replace the parent <pre> or highlight wrapper
+    const parent = code.closest("pre") || code.parentElement;
+    parent.replaceWith(mermaidDiv);
+  });
+
+  // Also handle highlight-wrapped blocks (MkDocs Material superfences)
+  document.querySelectorAll(".highlight .language-mermaid").forEach(function (code) {
+    const text = code.textContent.trim();
+    const mermaidDiv = document.createElement("div");
+    mermaidDiv.className = "mermaid";
+    mermaidDiv.textContent = text;
+    const wrapper = code.closest(".highlight");
+    if (wrapper) wrapper.replaceWith(mermaidDiv);
+  });
+
+  // Initialise Mermaid
+  if (typeof mermaid !== "undefined") {
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.getAttribute("data-md-color-scheme") === "slate" ? "dark" : "default",
+      securityLevel: "loose",
+    });
+    mermaid.init(undefined, document.querySelectorAll(".mermaid"));
+  }
+});
+
+// Re-render on theme toggle (dark ↔ light)
+document.addEventListener("change", function (e) {
+  if (e.target && e.target.matches("[data-md-color-scheme]")) {
+    location.reload();
+  }
+});
+

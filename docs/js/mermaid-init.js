@@ -1,72 +1,59 @@
-(function () {
-  const mermaidLanguagePattern = /\blanguage-mermaid\b/;
-  const processedAttribute = 'data-mermaid-processed';
-  let mermaidInitialized = false;
+// mermaid-init.js
+// Initializes Mermaid diagrams with proper theme matching (light/dark mode)
+// Runs AFTER Mermaid CDN script is loaded in mkdocs.yml
 
-  function initializeMermaid() {
-    if (mermaidInitialized || typeof mermaid === 'undefined') {
-      return;
-    }
+document.addEventListener("DOMContentLoaded", function () {
+  // Get current theme from Material theme
+  const getTheme = () => {
+    const scheme = document.body.getAttribute("data-md-color-scheme");
+    return scheme === "slate" ? "dark" : "default";
+  };
 
-    mermaid.initialize({ startOnLoad: false, theme: 'default' });
-    mermaidInitialized = true;
-  }
-
-  function runMermaid(nodes) {
-    if (!nodes.length || typeof mermaid === 'undefined') {
-      return;
-    }
-
-    initializeMermaid();
-    if (typeof mermaid.run === 'function') {
-      mermaid.run({ nodes: nodes });
-    } else {
-      mermaid.init(undefined, nodes);
-    }
-
-    nodes.forEach(function (node) {
-      node.setAttribute(processedAttribute, 'true');
-    });
-  }
-
-  function render(root) {
-    if (typeof mermaid === 'undefined') {
-      return;
-    }
-
-    const directNodes = root.querySelectorAll('.mermaid:not([' + processedAttribute + '="true"])');
-    const nodes = Array.from(directNodes);
-    const blocks = root.querySelectorAll('.highlight code, pre > code');
-
-    blocks.forEach(function (codeBlock) {
-      const className = codeBlock.className || '';
-      if (!mermaidLanguagePattern.test(className)) {
-        return;
-      }
-
-      const wrapper = codeBlock.closest('.highlight') || codeBlock.closest('pre');
-      if (!wrapper) {
-        return;
-      }
-
-      const div = document.createElement('div');
-      div.className = 'mermaid';
-      div.textContent = codeBlock.textContent.trim();
-      wrapper.replaceWith(div);
-      nodes.push(div);
+  // Initialize Mermaid with theme-aware config
+  if (typeof mermaid !== "undefined") {
+    mermaid.initialize({
+      startOnLoad: false,
+      theme: getTheme(),
+      securityLevel: "loose",    // Required for external loading
+      logLevel: "error",         // Suppress debug logs
+      flowchart: {
+        useMaxWidth: true,
+      },
+      sequence: {
+        useMaxWidth: true,
+      },
+      er: {
+        useMaxWidth: true,
+      },
+      mindmap: {
+        useMaxWidth: true,
+      },
     });
 
-    runMermaid(nodes);
+    // Render all mermaid diagrams (v10+ API)
+    mermaid.run({ querySelector: ".mermaid" });
   }
 
-  document.addEventListener('DOMContentLoaded', function () {
-    render(document);
+  // Re-initialize on theme toggle
+  const observer = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+      if (
+        mutation.type === "attributes" &&
+        mutation.attributeName === "data-md-color-scheme"
+      ) {
+        // Theme changed, reload to update Mermaid colors
+        if (typeof mermaid !== "undefined") {
+          // Force page reload on theme change (simplest approach)
+          // Optional: Can implement intelligent re-render instead
+          location.reload();
+        }
+      }
+    });
   });
 
-  if (typeof document$ !== 'undefined' && typeof document$.subscribe === 'function') {
-    document$.subscribe(function (root) {
-      render(root);
-    });
-  }
-})();
-
+  // Watch for theme changes on body element
+  observer.observe(document.body, {
+    attributes: true,
+    attributeFilter: ["data-md-color-scheme"],
+  });
+});

@@ -1,0 +1,31 @@
+*[API]: Application Programming Interface
+*[ML]: Machine Learning
+*[AI]: Artificial Intelligence
+*[LLM]: Large Language Model
+*[RAG]: Retrieval-Augmented Generation
+*[NLP]: Natural Language Processing
+*[SQL]: Structured Query Language
+*[NoSQL]: Not Only SQL
+*[ACID]: Atomicity, Consistency, Isolation, Durability
+*[CAP]: Consistency, Availability, Partition Tolerance (CAP Theorem)
+*[DB]: Database
+*[OLTP]: Online Transaction Processing
+*[OLAP]: Online Analytical Processing
+*[ETL]: Extract, Transform, Load
+*[CDN]: Content Delivery Network
+*[CPU]: Central Processing Unit
+*[GPU]: Graphics Processing Unit
+*[JSON]: JavaScript Object Notation
+*[YAML]: YAML Ain't Markup Language
+*[REST]: Representational State Transfer
+*[gRPC]: Google Remote Procedure Call
+*[CI]: Continuous Integration
+*[CD]: Continuous Deployment
+*[k8s]: Kubernetes
+*[TF]: TensorFlow
+*[NN]: Neural Network
+*[CNN]: Convolutional Neural Network
+*[RNN]: Recurrent Neural Network
+*[BERT]: Bidirectional Encoder Representations from Transformers
+*[GPT]: Generative Pre-trained Transformer
+

@@ -1,0 +1,38 @@
+{
+  "status": "completed",
+  "attempts": 2,
+  "trace": [
+    {
+      "step": "validated",
+      "request": {
+        "tool_name": "cancel_subscription",
+        "user_id": "user-42",
+        "payload": {
+          "subscription_id": "sub-101"
+        },
+        "idempotency_key": "cancel-sub-101-user-42",
+        "risk_level": "high"
+      }
+    },
+    {
+      "step": "approval_required",
+      "approved": true
+    },
+    {
+      "step": "execute",
+      "attempt": 1
+    },
+    {
+      "step": "retryable_failure",
+      "reason": "timeout"
+    },
+    {
+      "step": "execute",
+      "attempt": 2
+    },
+    {
+      "step": "verify",
+      "result": "success"
+    }
+  ]
+}

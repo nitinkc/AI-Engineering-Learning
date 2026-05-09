@@ -1,0 +1,50 @@
+# Getting Started
+
+> Before diving in, check what you need and how to navigate this guide.
+
+---
+
+## Prerequisites
+
+You'll get the most from this guide if you already have a basic understanding of:
+
+| Prerequisite | Why it helps | Resource |
+|---|---|---|
+| {PREREQ_1} | {WHY_1} | {LINK_1} |
+| {PREREQ_2} | {WHY_2} | {LINK_2} |
+
+**Don't worry if you're missing some** — each article links back to the concepts it depends on.
+
+---
+
+## Recommended Reading Order
+
+```mermaid
+graph TD
+  A[01 · Core Concepts] --> B[02 · ...]
+  B --> C[03 · ...]
+  C --> D[Advanced Section]
+```
+
+---
+
+## How Articles Are Structured
+
+Every deep-dive article follows the same pattern:
+
+- **Level badge** — Beginner / Intermediate / Advanced
+- **Pre-reading links** — what to read first
+- **Concept explanation** — clear prose + tables
+- **Diagram** — visual of how it works
+- **Math section** — equations explained step-by-step (where applicable)
+- **Interview Q&A** — common questions with model answers
+- **Hover glossary** — underlined terms show definitions on hover
+
+---
+
+## Key Questions This Guide Answers
+
+{KEY_QUESTIONS_LIST}
+
+--8<-- "_abbreviations.md"
+

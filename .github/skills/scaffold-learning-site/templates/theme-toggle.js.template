@@ -1,0 +1,21 @@
+// theme-toggle.js
+// Persists the user's dark/light preference across page loads.
+
+(function () {
+  const STORAGE_KEY = "mkdocs-theme";
+
+  // On load: restore saved preference
+  const saved = localStorage.getItem(STORAGE_KEY);
+  if (saved) {
+    document.body.setAttribute("data-md-color-scheme", saved);
+  }
+
+  // On toggle: save preference
+  document.addEventListener("change", function (e) {
+    const palette = document.querySelector("[data-md-color-scheme]");
+    if (palette) {
+      localStorage.setItem(STORAGE_KEY, palette.getAttribute("data-md-color-scheme"));
+    }
+  });
+})();
+

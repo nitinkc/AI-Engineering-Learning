@@ -1,0 +1,23 @@
+// mathjax.js
+// MathJax configuration — MUST be loaded BEFORE the MathJax CDN script.
+
+window.MathJax = {
+  tex: {
+    inlineMath: [["$", "$"], ["\\(", "\\)"]],
+    displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+    processEscapes: true,
+    processEnvironments: true,
+    tags: "ams",
+  },
+  options: {
+    skipHtmlTags: ["script", "noscript", "style", "textarea", "pre", "code"],
+    ignoreHtmlClass: ".*|",
+    processHtmlClass: "arithmatex",
+  },
+  startup: {
+    ready() {
+      MathJax.startup.defaultReady();
+    },
+  },
+};
+

@@ -2,6 +2,8 @@
 
 Standalone MkDocs site for interview-focused learning in AI Engineer, Agentic AI, and LLMOps roles.
 
+[https://nitinkc.github.io/AI-Engineering-Learning/](https://nitinkc.github.io/AI-Engineering-Learning/)
+
 ## What This Site Includes
 
 - Step-by-step 4-week learning path

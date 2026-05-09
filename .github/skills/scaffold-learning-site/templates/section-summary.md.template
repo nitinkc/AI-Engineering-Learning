@@ -1,0 +1,39 @@
+# NN · {Section Title}
+
+> **Section overview** — {one-line description of what this section covers}
+
+---
+
+## What's in This Section
+
+| Article | What You'll Learn | Level |
+|---|---|---|
+| [NN.01 · {Topic 1}](NN.01-topic.md) | {description} | 🟢 Beginner |
+| [NN.02 · {Topic 2}](NN.02-topic.md) | {description} | 🟡 Intermediate |
+
+---
+
+## Core Ideas at a Glance
+
+| Concept | One-Line Summary |
+|---|---|
+| {Concept 1} | {summary} |
+| {Concept 2} | {summary} |
+| {Concept 3} | {summary} |
+
+---
+
+## Key Takeaways
+
+- {Takeaway 1}
+- {Takeaway 2}
+- {Takeaway 3}
+
+---
+
+## Next Steps
+
+After this section → **[Next Section](../next-section/index.md)**
+
+--8<-- "_abbreviations.md"
+

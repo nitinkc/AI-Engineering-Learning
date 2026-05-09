@@ -1,0 +1,14 @@
+[
+  {
+    "source": "security_policy",
+    "text": "API keys expire every ninety days. Users must verify identity before resetting an expired key in the security portal. Audit logs must record the operator and timestamp."
+  },
+  {
+    "source": "support_runbook",
+    "text": "When a customer reports login issues, support should confirm account status, inspect recent reset actions, and escalate high-risk incidents to the security team."
+  },
+  {
+    "source": "long_handbook",
+    "text": "Long documents should be summarized in stages. First break the text into chunks. Then summarize each chunk. Then combine those summaries into one shorter answer that preserves the main decisions, constraints, and next actions. This reduces context overload and gives the model a smaller, more focused prompt."
+  }
+]

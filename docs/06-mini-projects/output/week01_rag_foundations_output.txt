@@ -1,0 +1,32 @@
+=== Retrieval Result ===
+{
+  "question": "How do I reset an expired API key?",
+  "prompt_tokens": 93,
+  "retrieved": [
+    {
+      "chunk_id": "security_policy-0",
+      "source": "security_policy",
+      "text": "API keys expire every ninety days. Users must verify identity before resetting an expired key in the security"
+    },
+    {
+      "chunk_id": "support_runbook-0",
+      "source": "support_runbook",
+      "text": "When a customer reports login issues, support should confirm account status, inspect recent reset actions, and escalate high-risk"
+    }
+  ],
+  "answer": "API keys expire every ninety days. Users must verify identity before resetting an expired key in the security When a customer reports login issues, support should confirm account status, inspect recent reset actions, and escalate high-risk",
+  "citations": [
+    "security_policy-0",
+    "support_runbook-0"
+  ]
+}
+
+=== Long Context Summary ===
+{
+  "chunk_summaries": [
+    "Long documents should be summarized in stages. First break the text into chunks",
+    "summaries into one shorter answer that preserves the main decisions, constraints, and next actions. This reduces context overload and gives",
+    "the model a smaller, more focused prompt"
+  ],
+  "final_summary": "Long documents should be summarized in stages. First break the text into chunks. summaries into one shorter answer that preserves the main decisions, constraints, and next actions. This reduces context overload and gives. the model a smaller, more focused prompt"
+}

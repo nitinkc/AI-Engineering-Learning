@@ -1,0 +1,100 @@
+# NN.XX · {Topic Name} — Deep Dive
+
+> **Level:** Beginner | Intermediate | Advanced
+> **Pre-reading:** [NN · Parent Section](../NN-section.md) · [NN.XX · Related](NN.XX-related.md)
+
+---
+
+## What Is {Topic Name}?
+
+{Clear 2–3 paragraph explanation. Use plain language first, then introduce precise terms.}
+
+---
+
+## How It Works
+
+```mermaid
+graph LR
+  A[Input] -->|step| B[Process]
+  B -->|step| C[Output]
+```
+
+{Explain each step of the diagram in prose.}
+
+---
+
+## The Math Behind It
+
+> 💡 *Skip this section if you just want the intuition — come back when you're ready.*
+
+{Introduce the equation with context before showing it.}
+
+$$
+\text{formula} = \frac{\text{numerator}}{\text{denominator}}
+$$
+
+**What each term means:**
+
+| Symbol | Meaning |
+|---|---|
+| `A` | {explanation} |
+| `B` | {explanation} |
+
+**Worked example:**
+
+$$
+\text{result} = \frac{x}{y} = z
+$$
+
+---
+
+## Comparison
+
+| Approach | Pros | Cons | Best For |
+|---|---|---|---|
+| {Option A} | | | |
+| {Option B} | | | |
+
+---
+
+## In Practice
+
+```python
+# Minimal working example
+{CODE_EXAMPLE}
+```
+
+---
+
+## Cloud Implementations
+
+| Provider | Service | Notes |
+|---|---|---|
+| AWS | {service} | {notes} |
+| GCP | {service} | {notes} |
+| Azure | {service} | {notes} |
+
+---
+
+??? question "Interview Q: {question}?"
+    {Answer in 2–4 lines. Be precise and use the correct terminology.}
+
+??? question "Interview Q: {question}?"
+    {Answer in 2–4 lines.}
+
+??? question "Interview Q: {question}?"
+    {Answer in 2–4 lines.}
+
+---
+
+## Summary
+
+| You learned | Key point |
+|---|---|
+| {concept 1} | {one-liner} |
+| {concept 2} | {one-liner} |
+
+**Next →** [{NN.XX+1 · Next Topic}](NN.XX+1-next.md)
+
+--8<-- "_abbreviations.md"
+
