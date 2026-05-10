@@ -5,17 +5,20 @@ description: "Skill bundle for the learning-site-template project. Contains temp
 
 # Skill: Learning Site Template
 
-This skill provides templates and standardized guidance for building professional, interactive technical learning sites using MkDocs Material.
+This skill provides templates and standardized guidance for building professional, interactive
+technical learning sites using MkDocs Material.
 
 ## What's Included
 
 ### Project Templates
+
 - **mkdocs.yml** — Fully configured with Material theme, Mermaid, MathJax
 - **CSS** — Professional styling (abbr, diagrams, math, dark mode)
 - **JavaScript** — Theme toggle, Mermaid rendering, Math execution
 - **Markdown templates** — For all article types (fundamentals through advanced)
 
 ### Created Structure
+
 ```
 learning-site-template/
 ├── mkdocs.yml
@@ -41,12 +44,14 @@ learning-site-template/
 ## Key Features
 
 ### 1. Professional Theme
+
 - Material Design with blue/orange color scheme
 - Automatic light/dark mode toggle
 - Mobile-responsive layout
 - Fast page loading & instant navigation
 
 ### 2. Rich Content Features
+
 - ✅ Mermaid diagrams (graphs, flowcharts, mind maps)
 - ✅ Math equations (KaTeX/MathJax)
 - ✅ Abbreviations with hover definitions
@@ -56,6 +61,7 @@ learning-site-template/
 - ✅ Tables & comparisons
 
 ### 3. Progressive Structure
+
 - **Fundamentals** — Beginner concepts (no prerequisites)
 - **Intermediate** — Building blocks & patterns
 - **Advanced** — Production patterns & optimization
@@ -63,6 +69,7 @@ learning-site-template/
 
 ###4. Built-in Content Scaffolding
 Agents to auto-generate:
+
 - Complete articles from topics
 - Interview Q&A blocks
 - Mermaid diagram suggestions
@@ -70,7 +77,9 @@ Agents to auto-generate:
 ## Best Practices Encoded
 
 ### Article Structure
+
 Every article includes:
+
 1. Level badge (🟢🟡🔴)
 2. Pre-reading links
 3. Plain-language intro
@@ -81,6 +90,7 @@ Every article includes:
 8. Abbreviations footer
 
 ### Markdown Guidelines
+
 - Tables for comparisons (not lists)
 - Blank lines before lists
 - Clear hierarchies with headings
@@ -89,6 +99,7 @@ Every article includes:
 - Practical examples over theory
 
 ### Color Scheme (PCF Standard)
+
 - **Primary:** Blue (#1976d2) — professional, calm
 - **Accent:** Orange (#ff9800) — highlights, attention
 - **Success:** Green (#2e7d32) — positive outcomes
@@ -97,11 +108,13 @@ Every article includes:
 ## How to Use This Template
 
 ### Quick Start
+
 1. It's already set up — just start filling in content
 2. Use the **copilot-instructions** guide for writing rules
 3. Use the **agents** to scaffold articles
 
 ### Fill Content Into:
+
 ```
 docs/
 ├── 01-fundamentals/01-core-concepts.md
@@ -114,6 +127,7 @@ docs/
 ```
 
 ### Scaffold Articles With:
+
 ```
 /fill-article-template
 Topic: [Your Topic]
@@ -124,14 +138,18 @@ Article Focus: [Concept to cover]
 ## Customization
 
 ### Change Colors
+
 Edit `mkdocs.yml` theme.palette:
+
 ```yaml
 primary: blue      # Change primary color
 accent: orange     # Change accent color
 ```
 
 ### Add Custom CSS
+
 Edit `docs/css/extra.css` — it already includes:
+
 - Abbreviation styling
 - Math block spacing
 - Mermaid centering
@@ -139,11 +157,13 @@ Edit `docs/css/extra.css` — it already includes:
 - Dark mode overrides
 
 ### Add Custom JS
+
 Create `docs/js/custom.js` and reference in `mkdocs.yml`
 
 ## Testing & Deployment
 
 ### Local Testing
+
 ```bash
 pip install -r requirements.txt
 mkdocs serve
@@ -151,12 +171,14 @@ mkdocs serve
 ```
 
 ### Build for Deployment
+
 ```bash
 mkdocs build
 # Output in site/ directory
 ```
 
 ### Deploy Options
+
 - GitHub Pages
 - Netlify
 - Vercel
@@ -165,6 +187,7 @@ mkdocs build
 ## Included Best Practices From
 
 This template consolidates best practices from 15+ real learning projects:
+
 - **PCF_Learning** — Mermaid color scheme, theme toggle
 - **aiDevGuide** — Math equations, executive content
 - **mlDLGuide** — Advanced math, neural networks
@@ -176,12 +199,14 @@ This template consolidates best practices from 15+ real learning projects:
 ## What's NOT Included
 
 This template is for **learning content**, not for:
+
 - Code repositories or full projects
 - API documentation (use Swagger/OpenAPI)
 - Software libraries/frameworks
 - Step-by-step tutorials (too prescriptive)
 
 Use other tools for:
+
 - API docs: Swagger/OpenAPI/Redoc
 - Code tutorials: Jupyter notebooks, GitHub
 - Video content: YouTube, Loom
@@ -190,6 +215,7 @@ Use other tools for:
 ## Questions?
 
 See:
+
 - [README.md](../../README.md) — Full overview
 - [.github/copilot-instructions.md](../copilot-instructions.md) — Writing guidelines
 - [docs/GETTING_STARTED.md](../../docs/GETTING_STARTED.md) — How to navigate

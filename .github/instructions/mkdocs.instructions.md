@@ -43,10 +43,12 @@ project-name/
 ### Article Templates
 
 **Summary / Section index** (`NN-section.md`):
+
 - Breadth-first, table-heavy, acts as entry point
 - Contains `→ Deep Dive` links to child articles
 
 **Deep-dive topic** (`NN.XX-topic.md`):
+
 ```markdown
 # Topic Name — Deep Dive
 
@@ -74,7 +76,8 @@ project-name/
 ## mkdocs.yml Rules
 
 - **Do not remove or override the `palette` toggle** — light/dark mode must remain
-- Palette uses `scheme: default` (light) and `scheme: slate` (dark), both with `primary: teal` and `accent: blue`
+- Palette uses `scheme: default` (light) and `scheme: slate` (dark), both with `primary: teal` and
+  `accent: blue`
 - Add new pages under `nav:` in logical order with descriptive, capitalized titles
 - Indent sub-articles under their parent section:
 
@@ -82,8 +85,8 @@ project-name/
 nav:
   - Home: index.md
   - 01 · Foundations: 01-foundations.md
-    - How It Works: 01.01-how-it-works.md
-    - Deep Dive: 01.02-deep-dive.md
+      - How It Works: 01.01-how-it-works.md
+      - Deep Dive: 01.02-deep-dive.md
 ```
 
 ---
@@ -91,10 +94,14 @@ nav:
 ## Known Issues & Fixes
 
 ### Lists not rendering
+
 Add a blank line before any list — always.
 
 ### Mermaid diagrams not rendering
-Use client-side JS rendering. `mermaid-init.js` must be loaded **after** the mermaid CDN script in `extra_javascript`:
+
+Use client-side JS rendering. `mermaid-init.js` must be loaded **after** the mermaid CDN script in
+`extra_javascript`:
+
 ```yaml
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
@@ -102,7 +109,9 @@ extra_javascript:
 ```
 
 ### Math equations not rendering
+
 Load config file **before** the MathJax library:
+
 ```yaml
 extra_javascript:
   - js/mathjax.js                # Config FIRST
@@ -110,12 +119,15 @@ extra_javascript:
 ```
 
 ### Abbreviations not showing
+
 - Ensure `docs/_abbreviations.md` exists with `*[TERM]: Definition` syntax
 - Ensure `mkdocs.yml` has both `abbr` and `pymdownx.snippets` in `markdown_extensions`
 - Include `--8<-- "_abbreviations.md"` at the bottom of every file
 
 ### Collapsible sections not styled
-Add to `docs/css/extra.css` — see `details` and `details summary` rules including `[data-md-color-scheme="slate"]` overrides for dark mode.
+
+Add to `docs/css/extra.css` — see `details` and `details summary` rules including
+`[data-md-color-scheme="slate"]` overrides for dark mode.
 
 ---
 
@@ -148,6 +160,7 @@ mkdocs build          # Build static site → site/
 ```
 
 Include in each article:
+
 ```markdown
 --8<-- "_abbreviations.md"
 ```

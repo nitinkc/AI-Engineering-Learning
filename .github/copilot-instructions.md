@@ -9,12 +9,14 @@
 When writing or suggesting content for this site:
 
 ### Tone
+
 - **Clear and accessible** — Explain concepts simply, avoid unnecessary jargon
 - **Practical** — Include real examples and use cases
 - **Confident** — Speak with authority, but acknowledge complexity
 - **Encouraging** — This is a learning resource, not a gatekeeping one
 
 ### Structure
+
 - **Progressive** — Each section builds on the last
 - **Self-contained** — Each article can stand alone (but link to prerequisites)
 - **Interactive** — Use Mermaid diagrams, math, collapsible Q&A blocks
@@ -43,19 +45,20 @@ Use these templates as the basis for all new articles:
 
 ### Markdown Features to Use
 
-| Feature | Syntax | When to Use |
-|---|---|---|
-| **Abbreviation** | `*[TERM]: Definition` in `_abbreviations.md` | Define technical terms |
-| **Mermaid diagram** | ` ```mermaid ... ``` ` | Visualize processes, architectures, flows |
-| **Math equation** | ` $$ formula $$ ` | Explain mathematical concepts |
-| **Collapsible Q&A** | ` ??? question "Q?" ` | Interview prep, common questions |
-| **Admonition** | ` !!! note "Title" ` | Highlights, tips, warnings |
-| **Tabs** | ` === "Tab 1" ` | Compare approaches, different languages |
-| **Code block** | ` ```python ... ``` ` | Working code examples |
+| Feature             | Syntax                                       | When to Use                               |
+|---------------------|----------------------------------------------|-------------------------------------------|
+| **Abbreviation**    | `*[TERM]: Definition` in `_abbreviations.md` | Define technical terms                    |
+| **Mermaid diagram** | ` ```mermaid ... ``` `                       | Visualize processes, architectures, flows |
+| **Math equation**   | ` $$ formula $$ `                            | Explain mathematical concepts             |
+| **Collapsible Q&A** | ` ??? question "Q?" `                        | Interview prep, common questions          |
+| **Admonition**      | ` !!! note "Title" `                         | Highlights, tips, warnings                |
+| **Tabs**            | ` === "Tab 1" `                              | Compare approaches, different languages   |
+| **Code block**      | ` ```python ... ``` `                        | Working code examples                     |
 
 ### Best Practices
 
 ✅ **DO:**
+
 - Start with plain language before jargon
 - Use tables for comparisons (never bullet lists)
 - Include worked examples
@@ -65,6 +68,7 @@ Use these templates as the basis for all new articles:
 - Add blank lines before lists
 
 ❌ **DON'T:**
+
 - Assume prior knowledge
 - Use overly academic language
 - Provide code without explanation
@@ -80,6 +84,7 @@ Use these templates as the basis for all new articles:
 ### Color Scheme
 
 Use the PCF color scheme (blue + orange):
+
 - **Blue (#1976d2):** Primary, main flow
 - **Orange (#ff9800):** Accent, highlights, attention
 - **Green (#2e7d32):** Success, positive
@@ -88,6 +93,7 @@ Use the PCF color scheme (blue + orange):
 ### Diagram Types & Examples
 
 **Flowchart (most common):**
+
 ```mermaid
 graph LR
     A["Step 1"] -->|condition| B["Step 2"]
@@ -98,6 +104,7 @@ graph LR
 ```
 
 **Mind Map (for hierarchies):**
+
 ```mermaid
 mindmap
   root((Topic))
@@ -109,6 +116,7 @@ mindmap
 ```
 
 **Sequence Diagram (for interactions):**
+
 ```mermaid
 sequenceDiagram
     participant A
@@ -122,6 +130,7 @@ sequenceDiagram
 ## Math Equations
 
 ### Inline Math
+
 Use `$$...$$ ` for display equations.
 
 Always **explain each symbol** in a table:
@@ -130,11 +139,11 @@ $$
 \text{result} = \frac{numerator}{denominator}
 $$
 
-| Symbol | Meaning |
-|---|---|
-| `result` | What we're calculating |
-| `numerator` | [explanation] |
-| `denominator` | [explanation] |
+| Symbol        | Meaning                |
+|---------------|------------------------|
+| `result`      | What we're calculating |
+| `numerator`   | [explanation]          |
+| `denominator` | [explanation]          |
 
 ### Best Practices
 
@@ -142,7 +151,7 @@ $$
 ✅ Explained symbols  
 ✅ Worked examples  
 ✗ Complex proofs  
-✗ Unexplained notation  
+✗ Unexplained notation
 
 ---
 
@@ -151,6 +160,7 @@ $$
 ### Adding New Terms
 
 When you use a technical term for the first time:
+
 1. Add it to `docs/_abbreviations.md`
 2. Use the format: `*[TERM]: Short definition (1-2 sentences)`
 3. Provide practical definition, not overly academic
@@ -213,6 +223,7 @@ Check the template articles for `[BRACKETS]` placeholders:
 ## Guidelines by Domain
 
 ### For Database/Distributed Systems Topics
+
 - Emphasize ACID/BASE/CAP
 - Include consistency models
 - Use sequence diagrams for node interactions
@@ -220,6 +231,7 @@ Check the template articles for `[BRACKETS]` placeholders:
 - Include performance trade-offs
 
 ### For Machine Learning Topics
+
 - Include math formulas with explanations
 - Use visualizations for model architectures
 - Provide intuition before equations
@@ -227,6 +239,7 @@ Check the template articles for `[BRACKETS]` placeholders:
 - Cover common pitfalls
 
 ### For Architecture Topics
+
 - Use system design diagrams
 - Cover scalability patterns
 - Include deployment strategies
@@ -251,6 +264,7 @@ When reviewing content, ensure:
 ## Questions?
 
 Refer to:
+
 - [README.md](../README.md) — Overview and features
 - [GETTING_STARTED.md](../docs/GETTING_STARTED.md) — How the guide is structured
 - [Quick Reference](../docs/reference/01-quick-reference.md) — Markdown features and syntax

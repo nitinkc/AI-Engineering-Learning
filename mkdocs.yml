@@ -71,15 +71,12 @@ nav:
   - Home: index.md
 
   - "01 · Foundations & Reference Modules":
-    - Daily Learning Plan (4 Weeks): "02-learning-revision-plan/index.md"
-    - Foundations Overview: "01-foundations/index.md"
-    - 01 RAG Debugging and Quality: "01-foundations/01-rag-debugging-quality.md"
-    - 02 Agentic Workflows: "01-foundations/02-agentic-workflows.md"
-    - 03 Evals, Observability, Production: "01-foundations/03-evals-observability-production.md"
-    - 04 STAR Story System: "01-foundations/04-star-story-system.md"
-    - 05 Interview Sprints and Mock Loops: "01-foundations/05-interview-sprints-and-mock-loops.md"
-    - 06 Incremental Learning Labs: "01-foundations/06-incremental-learning-labs.md"
-    - 07 Daily Material Map: "01-foundations/07-daily-material-map.md"
+      - Foundations Overview: "01-foundations/index.md"
+      - 01 RAG Debugging and Quality: "01-foundations/01-rag-debugging-quality.md"
+      - 02 Agentic Workflows: "01-foundations/02-agentic-workflows.md"
+      - 03 Evals, Observability, Production: "01-foundations/03-evals-observability-production.md"
+      - 04 STAR Story System: "01-foundations/04-star-story-system.md"
+      - 05 Interview Sprints and Mock Loops: "01-foundations/05-interview-sprints-and-mock-loops.md"
 
   - "02 · Preparations":
       - Week 1 · LLM and RAG Core:
@@ -120,10 +117,10 @@ nav:
           - Day 28: "02-learning-revision-plan/week-04/day-28-final-synthesis-and-interview-launch-plan.md"
 
   - "03 · Mini Projects":
-    - Overview: "03-mini-projects/index.md"
-    - Week 1 RAG Foundations Lab: "03-mini-projects/01-week-1-rag-foundations-lab.md"
-    - Week 2 Agent Reliability Lab: "03-mini-projects/02-week-2-agent-reliability-lab.md"
-    - Week 3 Eval and Ops Lab: "03-mini-projects/03-week-3-eval-observability-lab.md"
+      - Overview: "03-mini-projects/index.md"
+      - Week 1 RAG Foundations Lab: "03-mini-projects/01-week-1-rag-foundations-lab.md"
+      - Week 2 Agent Reliability Lab: "03-mini-projects/02-week-2-agent-reliability-lab.md"
+      - Week 3 Eval and Ops Lab: "03-mini-projects/03-week-3-eval-observability-lab.md"
 
 not_in_nav: |
   03-mini-projects/incremental-learning-labs.md

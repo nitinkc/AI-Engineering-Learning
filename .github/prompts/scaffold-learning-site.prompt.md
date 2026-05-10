@@ -7,22 +7,31 @@ context_limit: 20000
 
 # Scaffold Learning Site
 
-You are a documentation architect. When invoked, you scaffold a **complete, professional, ready-to-run MkDocs Material learning site** for any technical topic.
+You are a documentation architect. When invoked, you scaffold a **complete, professional,
+ready-to-run MkDocs Material learning site** for any technical topic.
 
-Before starting, **consider using the [learning-site-template](../../learning-site-template)** in the /Learn folder — it's a pre-built template with all best practices baked in. You can clone it and just fill in content instead of scaffolding from scratch.
+Before starting, **consider using the [learning-site-template](../../learning-site-template)** in
+the /Learn folder — it's a pre-built template with all best practices baked in. You can clone it and
+just fill in content instead of scaffolding from scratch.
 
-If you prefer to scaffold from scratch, read the skill reference at `.github/skills/scaffold-learning-site/` for templates and all required patterns.
+If you prefer to scaffold from scratch, read the skill reference at
+`.github/skills/scaffold-learning-site/` for templates and all required patterns.
 
 ---
 
 ## Your Task
 
-Given a topic and a list of concepts/questions from the user, produce a **ready-to-run MkDocs project** by:
+Given a topic and a list of concepts/questions from the user, produce a **ready-to-run MkDocs
+project** by:
 
-1. **Analysing the user's request** — extract topic, key concepts, skill level hints, and specific questions they want answered
-2. **Planning the structure** — define sections (Fundamentals → Intermediate → Advanced) with article titles mapped to the concepts
-3. **Scaffolding all files** — create every file listed below, using the templates from the skill bundle
-4. **Populating starter content** — write real content (not placeholders) for at least the index, getting started, and first fundamentals article
+1. **Analysing the user's request** — extract topic, key concepts, skill level hints, and specific
+   questions they want answered
+2. **Planning the structure** — define sections (Fundamentals → Intermediate → Advanced) with
+   article titles mapped to the concepts
+3. **Scaffolding all files** — create every file listed below, using the templates from the skill
+   bundle
+4. **Populating starter content** — write real content (not placeholders) for at least the index,
+   getting started, and first fundamentals article
 5. **Updating `mkdocs.yml` nav`** — ensure every created article is registered
 
 ---
@@ -31,7 +40,8 @@ Given a topic and a list of concepts/questions from the user, produce a **ready-
 
 ### 🟢 RECOMMENDED: Use the learning-site-template
 
-Instead of scaffolding from scratch, clone or use the **[learning-site-template](../../learning-site-template)** from the /Learn folder. It includes:
+Instead of scaffolding from scratch, clone or use the *
+*[learning-site-template](../../learning-site-template)** from the /Learn folder. It includes:
 
 ✅ Pre-configured mkdocs.yml with Material theme (blue/orange)  
 ✅ All CSS/JS files ready  
@@ -39,7 +49,7 @@ Instead of scaffolding from scratch, clone or use the **[learning-site-template]
 ✅ Sample article templates for each level  
 ✅ .github/agents to scaffold articles  
 ✅ .github/copilot-instructions documenting best practices  
-✅ Complete README & getting-started guides  
+✅ Complete README & getting-started guides
 
 **Simply fill in the content for your topic!**
 
@@ -51,30 +61,31 @@ If you prefer to build from scratch, follow the files and workflow below.
 
 ## Files to Create (If Scaffolding From Scratch)
 
-| File | What It Does | Required Content |
-|---|---|---|
-| `mkdocs.yml` | All configuration, navigation, theme | See theme config above |
-| `requirements.txt` | Python dependencies | Use standard list below |
-| `README.md` | Project overview | Brief description of the guide |
-| `docs/index.md` | Home page | Learning path diagram + introduction |
-| `docs/GETTING_STARTED.md` | Navigation & prerequisites | Prerequisites table + reading guide |
-| `docs/_abbreviations.md` | Glossary with 30+ terms | Topic-specific definitions |
-| `docs/css/extra.css` | Custom styling | Abbreviation styling, dark mode |
-| `docs/js/mathjax.js` | Math equation config | Standard MathJax setup |
-| `docs/js/mermaid-init.js` | Diagram rendering | Theme-aware Mermaid init |
-| `docs/js/theme-toggle.js` | Dark/light persistence | localStorage theme preference |
-| `docs/00-introduction/01-learning-path.md` | Learning guide map | Section progression diagram |
-| `docs/01-fundamentals/01-core-concepts.md` | **Real content** | Use deep-dive template |
-| `docs/01-fundamentals/02-key-principles.md` | **Real content** | Use deep-dive template |
-| `docs/02-intermediate/01-building-blocks.md` | **Scaffold with stubs** | Use section-summary template |
-| `docs/02-intermediate/02-practical-applications.md` | **Scaffold with stubs** | Use section-summary template |
-| `docs/03-advanced/01-advanced-patterns.md` | **Scaffold with stubs** | Use section-summary template |
-| `docs/03-advanced/02-production-considerations.md` | **Scaffold with stubs** | Use section-summary template |
-| `docs/reference/01-quick-reference.md` | Quick lookup cards | Tables with key concepts |
-| `docs/reference/02-cheatsheet.md` | Syntax + examples | Code blocks & command reference |
-| `docs/reference/03-interview-qa.md` | Interview prep | Q&A with model answers |
+| File                                                | What It Does                         | Required Content                     |
+|-----------------------------------------------------|--------------------------------------|--------------------------------------|
+| `mkdocs.yml`                                        | All configuration, navigation, theme | See theme config above               |
+| `requirements.txt`                                  | Python dependencies                  | Use standard list below              |
+| `README.md`                                         | Project overview                     | Brief description of the guide       |
+| `docs/index.md`                                     | Home page                            | Learning path diagram + introduction |
+| `docs/GETTING_STARTED.md`                           | Navigation & prerequisites           | Prerequisites table + reading guide  |
+| `docs/_abbreviations.md`                            | Glossary with 30+ terms              | Topic-specific definitions           |
+| `docs/css/extra.css`                                | Custom styling                       | Abbreviation styling, dark mode      |
+| `docs/js/mathjax.js`                                | Math equation config                 | Standard MathJax setup               |
+| `docs/js/mermaid-init.js`                           | Diagram rendering                    | Theme-aware Mermaid init             |
+| `docs/js/theme-toggle.js`                           | Dark/light persistence               | localStorage theme preference        |
+| `docs/00-introduction/01-learning-path.md`          | Learning guide map                   | Section progression diagram          |
+| `docs/01-fundamentals/01-core-concepts.md`          | **Real content**                     | Use deep-dive template               |
+| `docs/01-fundamentals/02-key-principles.md`         | **Real content**                     | Use deep-dive template               |
+| `docs/02-intermediate/01-building-blocks.md`        | **Scaffold with stubs**              | Use section-summary template         |
+| `docs/02-intermediate/02-practical-applications.md` | **Scaffold with stubs**              | Use section-summary template         |
+| `docs/03-advanced/01-advanced-patterns.md`          | **Scaffold with stubs**              | Use section-summary template         |
+| `docs/03-advanced/02-production-considerations.md`  | **Scaffold with stubs**              | Use section-summary template         |
+| `docs/reference/01-quick-reference.md`              | Quick lookup cards                   | Tables with key concepts             |
+| `docs/reference/02-cheatsheet.md`                   | Syntax + examples                    | Code blocks & command reference      |
+| `docs/reference/03-interview-qa.md`                 | Interview prep                       | Q&A with model answers               |
 
 **requirements.txt (always use this exact list):**
+
 ```
 mkdocs>=1.5.0
 mkdocs-material>=9.5.0
@@ -89,20 +100,24 @@ Markdown>=3.6
 ### ✅ For Every Article You Write
 
 **Structure & Content:**
+
 - Open with **2–3 plain-language sentences** before using any jargon (explain as if to a newcomer)
 - Use **tables for comparisons** (never lists for structured data)
 - Include **≥1 Mermaid diagram** per deep-dive (visualize processes, architectures, hierarchies)
-- Include **math equations** where applicable with `$$...$$` — **always explain every symbol in a table**
+- Include **math equations** where applicable with `$$...$$` — **always explain every symbol in a
+  table**
 - Include **2–3 interview Q&A blocks** (`??? question "Q?"`) with model answers
 - End every article with **`--8<-- "_abbreviations.md"`**
 
 **Formatting:**
+
 - Add **blank line before every list** (bullet or numbered)
 - Use **short paragraphs** (2–4 sentences max)
 - Use **clear hierarchies** with H2 (#) and H3 (##) headers
 - **Link to related concepts** and prerequisites
 
 **Mermaid Diagrams (Optimized from PCF_Learning):**
+
 - Color scheme: **Blue (#1976d2) primary** + **Orange (#ff9800) accent**
 - Use subgraphs for grouping related components
 - Use TB (top-down) or LR (left-right) based on flow
@@ -110,6 +125,7 @@ Markdown>=3.6
 - Include style blocks for color: `style NodeName fill:#1976d2,color:#fff`
 
 **Math Equations:**
+
 - Begin with plainEnglish explanation sentence
 - Show the formula with `$$ formula $$`
 - Create a symbol table explaining each term:
@@ -130,7 +146,8 @@ Markdown>=3.6
 
 ### ✅ For the Index Page
 
-- Include a **learning path Mermaid diagram** showing progression (Fundamentals → Intermediate → Advanced)
+- Include a **learning path Mermaid diagram** showing progression (Fundamentals → Intermediate →
+  Advanced)
 - Explain **why this guide exists** using the user's words and pain points
 - Include a **table** with sections and difficulty levels (🟢🟡🔴)
 - Provide **quick navigation** with `===` tabbed panels for different audiences
@@ -145,6 +162,7 @@ Markdown>=3.6
 ### ✅ Theme & Configuration (Material with PCF Colors)
 
 **mkdocs.yml must include:**
+
 ```yaml
 theme:
   name: material
@@ -164,6 +182,7 @@ theme:
 ```
 
 **Markdown extensions (COMPLETE SET):**
+
 - `abbr` — Abbreviations with hover tooltips
 - `pymdownx.superfences` with Mermaid support
 - `pymdownx.arithmatex` — Math equations (KaTeX/MathJax)
@@ -173,6 +192,7 @@ theme:
 - `pymdownx.highlight` with `anchor_linenums`
 
 **JavaScript (REQUIRED):**
+
 1. **mermaid-init.js** — Initializes Mermaid with theme-aware rendering (detects light/dark mode)
 2. **mathjax.js** — MathJax config for `$$..$$` rendering
 3. **theme-toggle.js** — Persists user's dark/light mode preference
@@ -206,7 +226,8 @@ theme:
 4. **Create article files** — fundamentals (real content), intermediate/advanced (with stubs)
 5. **Write content** — Fill in fundamentals fully; create stubs for intermediate/advanced
 6. **Validate** — Check all nav entries exist, all imports work, all files render
-7. **Test** — `pip install -r requirements.txt && mkdocs serve`, verify theme toggle, search, Mermaid, math
+7. **Test** — `pip install -r requirements.txt && mkdocs serve`, verify theme toggle, search,
+   Mermaid, math
 
 ---
 

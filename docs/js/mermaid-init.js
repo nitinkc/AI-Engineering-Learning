@@ -31,15 +31,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Render all mermaid diagrams (v10+ API)
-    mermaid.run({ querySelector: ".mermaid" });
+    mermaid.run({querySelector: ".mermaid"});
   }
 
   // Re-initialize on theme toggle
   const observer = new MutationObserver((mutations) => {
     mutations.forEach((mutation) => {
       if (
-        mutation.type === "attributes" &&
-        mutation.attributeName === "data-md-color-scheme"
+          mutation.type === "attributes" &&
+          mutation.attributeName === "data-md-color-scheme"
       ) {
         // Theme changed, reload to update Mermaid colors
         if (typeof mermaid !== "undefined") {

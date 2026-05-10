@@ -1,6 +1,8 @@
 # Week 02 — Agent Reliability Lab
 
-A self-contained Python project demonstrating **agentic workflow reliability**: tool schema validation, approval gates for high-risk actions, retry logic with trace logging, and escalation on budget exhaustion.
+A self-contained Python project demonstrating **agentic workflow reliability**: tool schema
+validation, approval gates for high-risk actions, retry logic with trace logging, and escalation on
+budget exhaustion.
 
 ## Project Structure
 
@@ -41,14 +43,14 @@ python -m pytest tests/ -v
 
 ## Key Concepts Covered
 
-| Concept | Module | Description |
-|---|---|---|
-| Tool schemas | `tools.py` | Structured input contracts per tool |
-| Validation | `agent.py` | Pre-flight checks: unknown tool, missing fields |
-| Approval gate | `agent.py` | High-risk actions blocked until approved |
-| Retry + trace | `agent.py` | Up to MAX_RETRIES with step-by-step trace |
-| Escalation | `agent.py` | Elevates to human when retry budget exhausted |
-| CLI | `cli.py` | Sub-commands: `search_kb`, `update_ticket`, `cancel_subscription` |
+| Concept       | Module     | Description                                                       |
+|---------------|------------|-------------------------------------------------------------------|
+| Tool schemas  | `tools.py` | Structured input contracts per tool                               |
+| Validation    | `agent.py` | Pre-flight checks: unknown tool, missing fields                   |
+| Approval gate | `agent.py` | High-risk actions blocked until approved                          |
+| Retry + trace | `agent.py` | Up to MAX_RETRIES with step-by-step trace                         |
+| Escalation    | `agent.py` | Elevates to human when retry budget exhausted                     |
+| CLI           | `cli.py`   | Sub-commands: `search_kb`, `update_ticket`, `cancel_subscription` |
 
 ## Requirements
 

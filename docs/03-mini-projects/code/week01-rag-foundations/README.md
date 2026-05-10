@@ -1,6 +1,7 @@
 # Week 01 — RAG Foundations Lab
 
-A self-contained Python project demonstrating **Retrieval-Augmented Generation** fundamentals: chunking, keyword retrieval, citation grounding, and long-document summarization.
+A self-contained Python project demonstrating **Retrieval-Augmented Generation** fundamentals:
+chunking, keyword retrieval, citation grounding, and long-document summarization.
 
 ## Project Structure
 
@@ -41,13 +42,13 @@ python -m pytest tests/ -v
 
 ## Key Concepts Covered
 
-| Concept | Module | Description |
-|---|---|---|
-| Chunking | `chunker.py` | Splits docs into fixed-size word chunks |
-| Retrieval | `retriever.py` | Keyword overlap scoring, top-k selection |
-| Grounding | `grounding.py` | Citation-anchored prompt construction |
-| Summarization | `summarizer.py` | Map-reduce over chunk summaries |
-| CLI | `cli.py` | Argparse sub-commands: `query`, `summarize` |
+| Concept       | Module          | Description                                 |
+|---------------|-----------------|---------------------------------------------|
+| Chunking      | `chunker.py`    | Splits docs into fixed-size word chunks     |
+| Retrieval     | `retriever.py`  | Keyword overlap scoring, top-k selection    |
+| Grounding     | `grounding.py`  | Citation-anchored prompt construction       |
+| Summarization | `summarizer.py` | Map-reduce over chunk summaries             |
+| CLI           | `cli.py`        | Argparse sub-commands: `query`, `summarize` |
 
 ## Requirements
 

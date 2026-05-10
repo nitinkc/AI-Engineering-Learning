@@ -1,105 +1,63 @@
-# 01 - Learning Path Companion
+# AI Engineer Reference Modules: Build, Debug, Explain
 
+This section is the reusable reference layer for the site. The day-by-day execution now lives in the
+learning revision plan, while these pages hold the durable deep dives, worked examples, and reusable
+interview prep modules.
 
-This page is the landing guide for your preparation.
-It keeps the plan simple: first build concepts, then convert them into interview answers, then run a structured revision loop.
+Use the daily plan when you want to know what to do next. Use these reference modules when you want
+the fuller explanation, example code, or lab pattern behind that day.
 
-## Plan Up Front
+## Who This Is For
 
-| Phase | Goal | Primary Resources | Output |
-|---|---|---|---|
-| 1) Learning Concepts | Build technical depth in LLM apps, RAG, agents, evals, and production ops | [01 RAG Debugging and Quality](01-foundations/01-rag-debugging-quality.md) · [02 Agentic Workflows](01-foundations/02-agentic-workflows.md) · [03 Evals, Observability, and Production](01-foundations/03-evals-observability-production.md) | Clear system understanding plus working notes |
-| 2) Interview Preparation | Turn technical work into concise, high-signal interview responses | [04 STAR Story System](01-foundations/04-star-story-system.md) · [05 Interview Sprints and Mock Loops](01-foundations/05-interview-sprints-and-mock-loops.md) | Story bank plus timed answers |
-| 3) Revision Plan | Retain and sharpen with daily and weekly repetition | [07 Daily Material Map](01-foundations/07-daily-material-map.md) · [Week 1](02-learning-revision-plan/week-01/index.md) · [Week 2](02-learning-revision-plan/week-02/index.md) · [Week 3](02-learning-revision-plan/week-03/index.md) · [Week 4](02-learning-revision-plan/week-04/index.md) | Interview-ready recall under pressure |
+Use this if you are targeting AI Engineer, Agent Engineer, GenAI Engineer, or LLMOps roles where
+interviewers test build-debug-deploy ownership.
 
-## Learning Flow
+## Week 1 - Foundations, RAG, and Retrieval
 
-```mermaid
-flowchart LR
-  A[Learning Concepts] --> B[Interview Preparation]
-  B --> C[Revision Plan]
-  C --> D[Mock Interview Performance]
-  D --> E[Gap Notes]
-  E --> A
-```
+| Day | Focus                                  | Primary material                                                                | Code or lab to use                   | End-of-day artifact          |
+|-----|----------------------------------------|---------------------------------------------------------------------------------|--------------------------------------|------------------------------|
+| 1   | LLM pipeline map and model basics      | [Foundations Overview](index.md)                                                | Prompt Builder and Token Budget      | System diagram               |
+| 2   | Prompting patterns and guardrails      | [Foundations Overview](index.md)                                                | Prompt Builder and Token Budget      | Prompt template library      |
+| 3   | Embeddings and retrieval basics        | [01 RAG Debugging and Quality](01-foundations/01-rag-debugging-quality.md)      | Minimal Grounded Retrieval Prototype | Chunking experiment note     |
+| 4   | RAG architecture and grounding         | [01 RAG Debugging and Quality](01-foundations/01-rag-debugging-quality.md)      | Minimal Grounded Retrieval Prototype | Grounded QA script           |
+| 5   | RAG quality debugging                  | [01 RAG Debugging and Quality](01-foundations/01-rag-debugging-quality.md)      | Failure Logging for RAG Debugging    | Root-cause table             |
+| 6   | Multimodal and long-context strategies | [Foundations Overview](index.md)                                                | Long-Context Map-Reduce Scaffold     | Long-doc summary scaffold    |
+| 7   | Consolidation and retrieval drill      | [Week 1 RAG Foundations Lab](03-mini-projects/01-week-1-rag-foundations-lab.md) | Lab A or Lab B                       | One-page debugging checklist |
 
-## 1) Learning Concepts
+## Week 2 - Agents, LangGraph, and Reliability
 
-Focus on understanding systems end to end before memorizing details.
+| Day | Focus                                  | Primary material                                                                                                                                     | Code or lab to use                               | End-of-day artifact        |
+|-----|----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|----------------------------|
+| 8   | Agentic patterns and tool calling      | [02 Agentic Workflows](01-foundations/02-agentic-workflows.md)                                                                                       | Tool Contract and Validator                      | Tool schema set            |
+| 9   | Planning, memory, and state management | [02 Agentic Workflows](01-foundations/02-agentic-workflows.md)                                                                                       | Stateful Workflow with Retry and Approval        | State transition sketch    |
+| 10  | LangGraph fundamentals                 | [02 Agentic Workflows](01-foundations/02-agentic-workflows.md)                                                                                       | Stateful Workflow with Retry and Approval        | Node-edge graph draft      |
+| 11  | Multi-agent coordination               | [02 Agentic Workflows](01-foundations/02-agentic-workflows.md)                                                                                       | Supervisor-worker adaptation of workflow example | Multi-agent handoff design |
+| 12  | Human-in-the-loop and approvals        | [02 Agentic Workflows](01-foundations/02-agentic-workflows.md)                                                                                       | Stateful Workflow with Retry and Approval        | Approval gate path         |
+| 13  | Reliability hardening for agents       | [02 Agentic Workflows](01-foundations/02-agentic-workflows.md) + [Week 2 Agent Reliability Lab](03-mini-projects/02-week-2-agent-reliability-lab.md) | Tool Reliability Sprint                          | Failure matrix             |
+| 14  | Consolidation and design review        | [02 Agentic Workflows](01-foundations/02-agentic-workflows.md) + [Week 2 Agent Reliability Lab](03-mini-projects/02-week-2-agent-reliability-lab.md) | Lab C output review                              | Architecture brief         |
 
-| Track | Use this page | Why |
-|---|---|---|
-| LLM and RAG quality | [01 RAG Debugging and Quality](01-foundations/01-rag-debugging-quality.md) | Builds pipeline-first debugging habits. |
-| Agent reliability and tools | [02 Agentic Workflows](01-foundations/02-agentic-workflows.md) | Teaches approval gates, retries, and safe orchestration. |
-| Evals and production readiness | [03 Evals, Observability, and Production](01-foundations/03-evals-observability-production.md) | Adds measurable release criteria and observability discipline. |
+## Week 3 - Evals, Observability, and Production
 
-| Practice layer | Resource |
-|---|---|
-| Weekly progression | [4-Week Daily System](02-learning-revision-plan/index.md) |
-| Hands-on lab (Week 1) | [RAG Foundations Lab](03-mini-projects/01-week-1-rag-foundations-lab.md) |
-| Hands-on lab (Week 2) | [Agent Reliability Lab](03-mini-projects/02-week-2-agent-reliability-lab.md) |
-| Hands-on lab (Week 3) | [Eval and Ops Lab](03-mini-projects/03-week-3-eval-observability-lab.md) |
+| Day | Focus                                  | Primary material                                                                                                                                                                 | Code or lab to use                        | End-of-day artifact         |
+|-----|----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------|-----------------------------|
+| 15  | Eval strategy and datasets             | [03 Evals, Observability, and Production](01-foundations/03-evals-observability-production.md)                                                                                   | Tiny Eval Dataset and Gate                | Starter eval set            |
+| 16  | Automated eval pipelines               | [03 Evals, Observability, and Production](01-foundations/03-evals-observability-production.md)                                                                                   | Tiny Eval Dataset and Gate                | Release gate policy         |
+| 17  | Observability and tracing              | [03 Evals, Observability, and Production](01-foundations/03-evals-observability-production.md)                                                                                   | Structured Trace Record                   | Trace example               |
+| 18  | Safety and policy controls             | [03 Evals, Observability, and Production](01-foundations/03-evals-observability-production.md)                                                                                   | Observability Checklist plus safety notes | Safety middleware checklist |
+| 19  | Deployment, scaling, and SLOs          | [03 Evals, Observability, and Production](01-foundations/03-evals-observability-production.md)                                                                                   | Release gate plus reliability checklist   | SLO and rollout note        |
+| 20  | Postmortems and continuous improvement | [03 Evals, Observability, and Production](01-foundations/03-evals-observability-production.md)                                                                                   | Release gate retrospective                | Postmortem draft            |
+| 21  | Readiness review                       | [03 Evals, Observability, and Production](01-foundations/03-evals-observability-production.md) + [Week 3 Eval and Ops Lab](03-mini-projects/03-week-3-eval-observability-lab.md) | Lab D and readiness checklist             | Production scorecard        |
 
-## 2) Interview Preparation
+## Week 4 - Portfolio, Stories, and Mock Loops
 
-Convert concepts into communication. Prioritize clarity, structure, and tradeoff reasoning.
-
-| Interview task | Primary resource | Target output |
-|---|---|---|
-| Story design | [04 STAR Story System](01-foundations/04-star-story-system.md) | 6 to 8 strong STAR stories |
-| Delivery practice | [05 Interview Sprints and Mock Loops](01-foundations/05-interview-sprints-and-mock-loops.md) | 90-second and 3-minute versions |
-| Reinforcement | [06 Incremental Learning Labs](01-foundations/06-incremental-learning-labs.md) | Artifact-backed talking points |
-
-??? question "Interview Q: How do you explain a production-grade LLM system in simple terms?"
-    **Model Answer:**
-    Start with the request path: input, context, model call, validation, and logging. Then explain reliability controls such as retries, guardrails, and monitoring. Keep the explanation focused on how failures are detected and corrected.
-
-    **Why this matters:**
-    Clear system explanations are a strong signal of practical ownership.
-
-??? question "Interview Q: What is your approach when RAG answers are wrong?"
-    **Model Answer:**
-    I separate the problem into retrieval quality and generation quality. I check source coverage, chunking, retrieval settings, and grounding prompt behavior in order. I then add the failure case to evaluation tests so the same issue is caught after future changes.
-
-    **Why this matters:**
-    Interviewers look for a repeatable debugging method, not random fixes.
-
-??? question "Interview Q: How do you prepare quickly for mixed system-design and behavioral rounds?"
-    **Model Answer:**
-    I use one technical project as the anchor and map architecture, failures, fixes, and outcomes to STAR stories. Then I practice both short and long answer formats until delivery is consistent.
-
-    **Why this matters:**
-    This connects technical depth with communication quality.
-
-## 3) Revision Plan
-
-Use a repeatable cycle instead of random review.
-
-| Daily loop (60 to 90 minutes) | Action |
-|---|---|
-| Step 1 | Concept refresh |
-| Step 2 | Build or debugging task |
-| Step 3 | Recall without notes |
-| Step 4 | Interview translation |
-| Step 5 | Gap log update |
-
-| Weekly loop | Action |
-|---|---|
-| Step 1 | Run one mock session |
-| Step 2 | Fix top weak answers |
-| Step 3 | Refresh one project artifact (diagram, README, or eval note) |
-| Step 4 | Set next-week focus using [07 Daily Material Map](01-foundations/07-daily-material-map.md) |
-
-## Quick Navigation
-
-| Need | Go to |
-|---|---|
-| Start from weekly structure | [4-Week Daily System](02-learning-revision-plan/index.md) |
-| Deepen fundamentals | [Foundations Index](01-foundations/index.md) |
-| Practice with code | [Mini Projects Index](03-mini-projects/index.md) |
-| Run reinforcement drills | [06 Incremental Learning Labs](01-foundations/06-incremental-learning-labs.md) |
-
----
+| Day | Focus                                         | Primary material                                                                                                                         | Code or lab to use                        | End-of-day artifact         |
+|-----|-----------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------|-----------------------------|
+| 22  | Role targeting and competency mapping         | [04 STAR Story System](01-foundations/04-star-story-system.md)                                                                           | Role-to-Evidence Matrix                   | Competency matrix           |
+| 23  | STAR story bank                               | [04 STAR Story System](01-foundations/04-star-story-system.md)                                                                           | Story Card template                       | Six story draft             |
+| 24  | Portfolio assembly and narrative              | [04 STAR Story System](01-foundations/04-star-story-system.md)                                                                           | Story Card plus case-study framing        | Case-study outline          |
+| 25  | Technical interview drills                    | [05 Interview Sprint Loops](01-foundations/05-interview-sprints-and-mock-loops.md)                                                       | 90-Second Drill Runner                    | Drill score sheet           |
+| 26  | Behavioral and cross-functional communication | [05 Interview Sprint Loops](01-foundations/05-interview-sprints-and-mock-loops.md)                                                       | Example Scorecard and stakeholder rewrite | Behavioral answer sheet     |
+| 27  | Full mock loop and feedback integration       | [05 Interview Sprint Loops](01-foundations/05-interview-sprints-and-mock-loops.md) + [Mini Projects Overview](03-mini-projects/index.md) | Lab E and mock loop                       | Revision log                |
+| 28  | Final synthesis and launch plan               | [05 Interview Sprint Loops](01-foundations/05-interview-sprints-and-mock-loops.md)                                                       | Step-by-Step Mock Loop Runbook            | Two-week interview calendar |
 
 --8<-- "_abbreviations.md"
-

@@ -49,45 +49,43 @@ Score each answer from 1 to 5 on:
 
 ## Week 4 Alignment
 
-| Day | Use this page for | Deliverable |
-|---|---|---|
-| Day 25 | Technical drill structure and answer framework | Drill score sheet |
-| Day 26 | Behavioral communication and translation | Stakeholder-friendly answer set |
-| Day 27 | Full mock loop and revision cycle | Mock transcript and fixes |
-| Day 28 | Final launch plan and warm-up cadence | 2-week interview calendar |
+| Day    | Use this page for                              | Deliverable                     |
+|--------|------------------------------------------------|---------------------------------|
+| Day 25 | Technical drill structure and answer framework | Drill score sheet               |
+| Day 26 | Behavioral communication and translation       | Stakeholder-friendly answer set |
+| Day 27 | Full mock loop and revision cycle              | Mock transcript and fixes       |
+| Day 28 | Final launch plan and warm-up cadence          | 2-week interview calendar       |
 
 ## Step-by-Step Mock Loop Runbook
 
-| Step | Action | Output |
-|---|---|---|
-| 1 | Pick 3 technical questions and 2 behavioral questions | Question set |
-| 2 | Answer each in 90 seconds | Baseline delivery |
-| 3 | Re-answer the weakest one in 3 minutes | Deep-dive version |
-| 4 | Score with the rubric | Gap list |
-| 5 | Rewrite one weak answer and retry next day | Improvement loop |
+| Step | Action                                                | Output            |
+|------|-------------------------------------------------------|-------------------|
+| 1    | Pick 3 technical questions and 2 behavioral questions | Question set      |
+| 2    | Answer each in 90 seconds                             | Baseline delivery |
+| 3    | Re-answer the weakest one in 3 minutes                | Deep-dive version |
+| 4    | Score with the rubric                                 | Gap list          |
+| 5    | Rewrite one weak answer and retry next day            | Improvement loop  |
 
 ## Example Code: 90-Second Drill Runner
 
 ```python
 import time
 
-
 questions = [
-	"How do you debug a bad RAG answer?",
-	"How do you design reliable tool-calling agents?",
-	"How do you evaluate a prompt change before release?",
+  "How do you debug a bad RAG answer?",
+  "How do you design reliable tool-calling agents?",
+  "How do you evaluate a prompt change before release?",
 ]
 
-
 for question in questions:
-	print(f"Question: {question}")
-	print("Start speaking now")
-	time.sleep(2)
-	print("Checkpoint: 30 seconds")
-	time.sleep(2)
-	print("Checkpoint: 60 seconds")
-	time.sleep(2)
-	print("Stop at 90 seconds and score yourself")
+  print(f"Question: {question}")
+  print("Start speaking now")
+  time.sleep(2)
+  print("Checkpoint: 30 seconds")
+  time.sleep(2)
+  print("Checkpoint: 60 seconds")
+  time.sleep(2)
+  print("Stop at 90 seconds and score yourself")
 ```
 
 ## Example Scorecard
@@ -105,15 +103,17 @@ next_fix: Add one metric and shorten the opening by one sentence.
 ```
 
 ??? question "Interview Q: What is the fastest way to improve weak interview answers?"
-	**Model Answer:**
-	Record the answer, score it against a fixed rubric, and rewrite only the weakest part instead of starting over. That creates measurable iteration instead of random practice.
+**Model Answer:**
+Record the answer, score it against a fixed rubric, and rewrite only the weakest part instead of
+starting over. That creates measurable iteration instead of random practice.
 
 	**Why this matters:**
 	This shows you can improve performance with an engineering-style feedback loop.
 
 ??? question "Interview Q: Why prepare both 90-second and 3-minute versions?"
-	**Model Answer:**
-	The short version proves clarity and structure, while the longer version proves depth and tradeoff reasoning. Together they prepare you for both recruiter screens and technical interviews.
+**Model Answer:**
+The short version proves clarity and structure, while the longer version proves depth and tradeoff
+reasoning. Together they prepare you for both recruiter screens and technical interviews.
 
 	**Why this matters:**
 	Interview success depends on adapting answer depth to the round.
@@ -135,15 +135,10 @@ After each mock:
 ## Quick Lab (20 min)
 
 ??? note "Mock loop lab"
-	- Pick any 3 questions from the bank.
-	- Answer each in 90 seconds.
-	- Re-answer one question in 3 minutes.
-	- Grade yourself with the rubric and update one story.
-
-
----
-
-Next: [06 Incremental Learning Labs](06-incremental-learning-labs.md)
+- Pick any 3 questions from the bank.
+- Answer each in 90 seconds.
+- Re-answer one question in 3 minutes.
+- Grade yourself with the rubric and update one story.
 
 --8<-- "_abbreviations.md"
 

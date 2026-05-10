@@ -1,6 +1,7 @@
 # Week 03 — Eval & Observability Lab
 
-A self-contained Python project demonstrating **evaluation pipelines and observability**: golden dataset scoring, release gate logic, structured trace collection, and ship/no-ship decisions.
+A self-contained Python project demonstrating **evaluation pipelines and observability**: golden
+dataset scoring, release gate logic, structured trace collection, and ship/no-ship decisions.
 
 ## Project Structure
 
@@ -38,14 +39,14 @@ python -m pytest tests/ -v
 
 ## Key Concepts Covered
 
-| Concept | Module | Description |
-|---|---|---|
-| Golden dataset | `evaluator.py` | Fixed Q&A pairs with expected term coverage |
-| Metric scoring | `evaluator.py` | Per-question faithfulness scores |
-| Release gate | `evaluator.py` | Multi-metric threshold check → ship/no-ship |
-| Span tracing | `tracer.py` | Context-manager-based timing and metadata |
-| Observability | `tracer.py` | Structured trace dict with duration per span |
-| CLI | `cli.py` | Sub-commands: `run`, `compare`, `thresholds` |
+| Concept        | Module         | Description                                  |
+|----------------|----------------|----------------------------------------------|
+| Golden dataset | `evaluator.py` | Fixed Q&A pairs with expected term coverage  |
+| Metric scoring | `evaluator.py` | Per-question faithfulness scores             |
+| Release gate   | `evaluator.py` | Multi-metric threshold check → ship/no-ship  |
+| Span tracing   | `tracer.py`    | Context-manager-based timing and metadata    |
+| Observability  | `tracer.py`    | Structured trace dict with duration per span |
+| CLI            | `cli.py`       | Sub-commands: `run`, `compare`, `thresholds` |
 
 ## Requirements
 

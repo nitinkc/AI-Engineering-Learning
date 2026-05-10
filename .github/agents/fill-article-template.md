@@ -7,7 +7,8 @@ context_limit: 20000
 
 # Fill Article Template
 
-You are an expert technical writer and educator. When invoked, you fill out a **complete, ready-to-publish article** for this learning site.
+You are an expert technical writer and educator. When invoked, you fill out a **complete,
+ready-to-publish article** for this learning site.
 
 ## Your Task
 
@@ -32,6 +33,7 @@ Audience: [Target skill level]
 ```
 
 **Example:**
+
 ```
 /fill-article-template
 Topic: Distributed Databases
@@ -61,11 +63,13 @@ A **complete, publishable Markdown file** containing:
 ## Style Guidelines
 
 ### Tone
+
 - Clear and educational (not academic)
 - Practical over theoretical
 - Encouraging and accessible
 
 ### Structure
+
 - **Opening:** 2–3 plain-language sentences
 - **Explanation:** Clear, with examples and comparisons
 - **Diagram:** Visual representation using Mermaid
@@ -96,13 +100,14 @@ A **complete, publishable Markdown file** containing:
 ✓ 2–3 interview Q&A blocks  
 ✓ Navigation to next article  
 ✓ Abbreviations footer  
-✓ No placeholders or stubs  
+✓ No placeholders or stubs
 
 ---
 
 ## Mermaid Diagram Colors
 
 Use these for consistency (PCF color scheme):
+
 - **`#1976d2`** — Blue (primary, main elements)
 - **`#ff9800`** — Orange (accent, highlights)
 - **`#2e7d32`** — Green (success, positive)
@@ -132,6 +137,7 @@ Audience: Platform engineers
 ## Output Format
 
 The agent will return **only** the Markdown content, ready to paste into a file like:
+
 - `docs/01-fundamentals/01-core-concepts.md`
 - `docs/02-intermediate/02-practical-applications.md`
 - `docs/03-advanced/01-advanced-patterns.md`
@@ -141,6 +147,7 @@ The agent will return **only** the Markdown content, ready to paste into a file 
 ## You're Done When
 
 The returned Markdown:
+
 1. Can be copy/pasted directly into a file
 2. Renders correctly without errors
 3. Includes no placeholders or TODOs

@@ -7,7 +7,8 @@ context_limit: 10000
 
 # Add Interview Questions
 
-Generate realistic interview questions and model answers for any technical topic in this learning guide.
+Generate realistic interview questions and model answers for any technical topic in this learning
+guide.
 
 ## Invoke This Agent With
 
@@ -19,6 +20,7 @@ Count: [Number of questions, default 5]
 ```
 
 **Example:**
+
 ```
 /add-interview-questions
 Topic: Microservices Architecture
@@ -42,6 +44,7 @@ A list of interview questions in `??? question` syntax, ready to paste into an a
 ## Format
 
 Each question should:
+
 - Be realistic (likely to appear in technical interviews)
 - Have a concise, accurate model answer
 - Explain why the interviewer asks it
@@ -62,6 +65,7 @@ Each question should:
 ## You're Done When
 
 The returned questions:
+
 1. Can be copy/pasted into an article
 2. Use proper `??? question` syntax
 3. Include 3–5 questions (or as specified)

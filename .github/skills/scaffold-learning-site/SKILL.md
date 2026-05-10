@@ -1,8 +1,11 @@
 # Skill: scaffold-learning-site
 
-**Purpose:** Scaffold a complete MkDocs Material learning tutorial project from scratch for any technical topic — structured progressively from basics to expert level, with hover glossary, Mermaid diagrams, math rendering, dark/light mode, and interview Q&A blocks.
+**Purpose:** Scaffold a complete MkDocs Material learning tutorial project from scratch for any
+technical topic — structured progressively from basics to expert level, with hover glossary, Mermaid
+diagrams, math rendering, dark/light mode, and interview Q&A blocks.
 
 **Use this skill when the user says things like:**
+
 - "Create a learning site for..."
 - "Scaffold a tutorial project covering..."
 - "Build a mkdocs site that teaches..."
@@ -46,20 +49,21 @@ For any topic domain (e.g., RAG Search, Databases, Kubernetes, ML Fundamentals):
 
 When invoking, replace these tokens with the actual domain:
 
-| Token | Example (RAG) | Example (Databases) |
-|---|---|---|
-| `{TOPIC}` | RAG Search & Vector Databases | Database Engineering |
-| `{SLUG}` | `rag-learning` | `db-learning` |
+| Token          | Example (RAG)                        | Example (Databases)           |
+|----------------|--------------------------------------|-------------------------------|
+| `{TOPIC}`      | RAG Search & Vector Databases        | Database Engineering          |
+| `{SLUG}`       | `rag-learning`                       | `db-learning`                 |
 | `{CORE_TERMS}` | embedding, cosine similarity, vector | ACID, normalization, sharding |
-| `{SECTION_01}` | Foundations of Search | Database Fundamentals |
-| `{SECTION_02}` | Vector Search & Retrieval | Scaling Strategies |
-| `{SECTION_03}` | Production RAG Patterns | Expert & Cloud Patterns |
+| `{SECTION_01}` | Foundations of Search                | Database Fundamentals         |
+| `{SECTION_02}` | Vector Search & Retrieval            | Scaling Strategies            |
+| `{SECTION_03}` | Production RAG Patterns              | Expert & Cloud Patterns       |
 
 ---
 
 ## Reference Templates
 
 See:
+
 - [`templates/mkdocs.yml.template`](templates/mkdocs.yml.template)
 - [`templates/index.md.template`](templates/index.md.template)
 - [`templates/section-summary.md.template`](templates/section-summary.md.template)

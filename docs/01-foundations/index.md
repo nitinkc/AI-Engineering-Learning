@@ -1,156 +1,109 @@
 # AI Engineer Reference Modules: Build, Debug, Explain
 
-> **Pre-reading:** [Daily Learning Plan](../02-learning-revision-plan/index.md) · [Foundations Overview](index.md)
-
----
-
-This section is the reusable reference layer for the site. The day-by-day execution now lives in the learning revision plan, while these pages hold the durable deep dives, worked examples, and reusable interview prep modules.
-
-Use the daily plan when you want to know what to do next. Use these reference modules when you want the fuller explanation, example code, or lab pattern behind that day.
-
-## What This Section Covers
-
-| Module type | What you get |
-|---|---|
-| Technical modules | RAG, agent workflows, and production-readiness deep dives |
-| Interview modules | STAR story conversion and timed mock-loop practice |
-| Retention modules | Incremental labs and a day-to-material mapping table |
-
-## Reference Module Sequence
-
-| Step | Module | Purpose |
-|---|---|---|
-| 1 | [01 RAG Debugging and Quality](01-rag-debugging-quality.md) | Build a pipeline-first debugging habit. |
-| 2 | [02 Agentic Workflows](02-agentic-workflows.md) | Learn safer tool orchestration and control patterns. |
-| 3 | [03 Evals, Observability, Production](03-evals-observability-production.md) | Turn experiments into measurable release decisions. |
-| 4 | [04 STAR Story System](04-star-story-system.md) | Convert technical work into credible interview stories. |
-| 5 | [05 Interview Sprints and Mock Loops](05-interview-sprints-and-mock-loops.md) | Rehearse delivery under time pressure. |
-| 6 | [06 Incremental Learning Labs](06-incremental-learning-labs.md) | Lock retention with short build-and-explain drills. |
+This section is the reusable reference layer for the site. Use these modules when you want the
+durable explanation behind the daily plan: how the systems work, what interviewers expect, and how
+to connect concepts to execution.
 
 ## Who This Is For
 
-Use this if you are targeting AI Engineer, Agent Engineer, GenAI Engineer, or LLMOps roles where interviewers test build-debug-deploy ownership.
+Use this if you are targeting AI Engineer, Agent Engineer, GenAI Engineer, or LLMOps roles where
+interviewers test build-debug-deploy ownership.
 
-## Path Overview
+## Module Map
 
-```mermaid
-flowchart LR
-    A[01 Learning Path] --> B[02 RAG Debugging and Quality]
-    B --> C[03 Agentic Workflows and Tools]
-    C --> D[04 Evals, Observability, Production]
-    D --> E[05 STAR Story System]
-    E --> F[06 Interview Sprint Loops]
-    F --> G[07 Incremental Learning Labs]
-```
+| Module | Focus                                | Use this when you need                                                  | Open                                                                            |
+|--------|--------------------------------------|-------------------------------------------------------------------------|---------------------------------------------------------------------------------|
+| 01     | RAG debugging and retrieval quality  | Retrieval grounding, chunking, citations, and failure analysis          | [01 RAG Debugging and Quality](01-rag-debugging-quality.md)                     |
+| 02     | Agentic workflows                    | Tool calling, state, approval gates, retries, and workflow design       | [02 Agentic Workflows](02-agentic-workflows.md)                                 |
+| 03     | Evals, observability, and production | Eval design, tracing, release gates, and readiness reviews              | [03 Evals, Observability, and Production](03-evals-observability-production.md) |
+| 04     | STAR story system                    | Role targeting, evidence mapping, story building, and portfolio framing | [04 STAR Story System](04-star-story-system.md)                                 |
+| 05     | Interview sprints and mock loops     | Timed drills, scorecards, and mock loop practice                        | [05 Interview Sprints and Mock Loops](05-interview-sprints-and-mock-loops.md)   |
 
-## Recommended Order
+## Suggested Reading Paths
 
-| When you need... | Start here |
-|---|---|
-| A quick map of the whole system | [Foundations Overview](index.md) |
-| A deep technical block for Weeks 1 to 3 | [01](01-rag-debugging-quality.md), then [02](02-agentic-workflows.md), then [03](03-evals-observability-production.md) |
-| Interview conversion for Week 4 | [04](04-star-story-system.md), then [05](05-interview-sprints-and-mock-loops.md) |
-| Reinforcement and artifact creation | [06](06-incremental-learning-labs.md) and [07](07-daily-material-map.md) |
+### Build and debug AI systems
 
-## How This Connects to the Daily Plan
+01 -> 02 -> 03
 
-| Daily-plan layer | Best companion here |
-|---|---|
-| Week 1 daily pages | [01 RAG Debugging and Quality](01-rag-debugging-quality.md) |
-| Week 2 daily pages | [02 Agentic Workflows](02-agentic-workflows.md) |
-| Week 3 daily pages | [03 Evals, Observability, Production](03-evals-observability-production.md) |
-| Week 4 daily pages | [04 STAR Story System](04-star-story-system.md) and [05 Interview Sprints and Mock Loops](05-interview-sprints-and-mock-loops.md) |
-| Retention across all weeks | [06 Incremental Learning Labs](06-incremental-learning-labs.md) and [07 Daily Material Map](07-daily-material-map.md) |
+### Convert work into interview signal
 
-> **Pre-reading:** [Daily Learning Plan](../02-learning-revision-plan/index.md) · [Foundations Overview](index.md) · [06 Incremental Learning Labs](06-incremental-learning-labs.md)
+04 -> 05
 
----
+### Full reference path
 
-This page turns the 28-day schedule into a usable study path. For each day, it points you to the exact supporting material, the example code to adapt, and the artifact you should produce by the end of the session.
+01 -> 02 -> 03 -> 04 -> 05
 
-```mermaid
-graph LR
-    A[Daily Plan] --> B[Playbook Module]
-    B --> C[Code or Lab]
-    C --> D[Artifact]
-    D --> E[Interview Recall]
+## Related Sections
 
-    style A fill:#1976d2,color:#fff
-    style C fill:#ff9800,color:#fff
-    style E fill:#2e7d32,color:#fff
-```
+| Need                            | Open                                                                |
+|---------------------------------|---------------------------------------------------------------------|
+| Day-by-day study sequence       | [Learning and Revision Plan](../02-learning-revision-plan/index.md) |
+| Week-specific hands-on projects | [Mini Projects](../03-mini-projects/index.md)                       |
 
-## Week 1 - Foundations, RAG, and Retrieval
 
-| Day | Focus | Primary material | Code or lab to use | End-of-day artifact |
-|---|---|---|---|---|
-| 1 | LLM pipeline map and model basics | [Foundations Overview](index.md) | Prompt Builder and Token Budget | System diagram |
-| 2 | Prompting patterns and guardrails | [Foundations Overview](index.md) | Prompt Builder and Token Budget | Prompt template library |
-| 3 | Embeddings and retrieval basics | [01 RAG Debugging and Quality](01-rag-debugging-quality.md) | Minimal Grounded Retrieval Prototype | Chunking experiment note |
-| 4 | RAG architecture and grounding | [01 RAG Debugging and Quality](01-rag-debugging-quality.md) | Minimal Grounded Retrieval Prototype | Grounded QA script |
-| 5 | RAG quality debugging | [01 RAG Debugging and Quality](01-rag-debugging-quality.md) | Failure Logging for RAG Debugging | Root-cause table |
-| 6 | Multimodal and long-context strategies | [Foundations Overview](index.md) | Long-Context Map-Reduce Scaffold | Long-doc summary scaffold |
-| 7 | Consolidation and retrieval drill | [06 Incremental Learning Labs](06-incremental-learning-labs.md) | Lab A or Lab B | One-page debugging checklist |
+1. Tokens
+The very first thing that you must register in your brain is that AI models don’t read words. They don’t even read letters. They read tokens.
+So what’s a token?
+Imagine you’re reading a book, but instead of reading all the words, you’re reading chunks of words. Sometimes a chunk is a complete word like “cat.” Sometimes it’s part of a word like “un” or “tion.” Sometimes it’s punctuation. That piece of text (chunk) is a token.
+For example, the sentence “I love pizza” can be broken into 3tokens: “I”, “ love”, “ pizza”.
+Why does this matter to you?
+Because every AI product you use such as ChatGPT, Claude, Gemini, is counting tokens behind the scenes. The more tokens you send in your message, the more the model has to process. The more tokens it generates in its reply, the more expensive it gets to run.
+When you hear people talk about a model’s context window (more on that in a second), they’re talking about how many tokens it can hold in memory at once. Some older models could handle 4,000 tokens. Newer ones can handle over a million.
+This is why AI at times forgets earlier parts of a long conversation. Once the conversation fills up the context window, the oldest tokens are dropped just like when your RAM fills up and your computer starts lagging.
+Tokens are the atoms of AI language. Once you understand that, you start to see why some prompts work better than others, why AI gets forgets in long chats, and why API pricing is measured in tokens per thousand.
 
-## Week 2 - Agents, LangGraph, and Reliability
 
-| Day | Focus | Primary material | Code or lab to use | End-of-day artifact |
-|---|---|---|---|---|
-| 8 | Agentic patterns and tool calling | [02 Agentic Workflows](02-agentic-workflows.md) | Tool Contract and Validator | Tool schema set |
-| 9 | Planning, memory, and state management | [02 Agentic Workflows](02-agentic-workflows.md) | Stateful Workflow with Retry and Approval | State transition sketch |
-| 10 | LangGraph fundamentals | [02 Agentic Workflows](02-agentic-workflows.md) | Stateful Workflow with Retry and Approval | Node-edge graph draft |
-| 11 | Multi-agent coordination | [02 Agentic Workflows](02-agentic-workflows.md) | Supervisor-worker adaptation of workflow example | Multi-agent handoff design |
-| 12 | Human-in-the-loop and approvals | [02 Agentic Workflows](02-agentic-workflows.md) | Stateful Workflow with Retry and Approval | Approval gate path |
-| 13 | Reliability hardening for agents | [02 Agentic Workflows](02-agentic-workflows.md) + [06 Incremental Learning Labs](06-incremental-learning-labs.md) | Tool Reliability Sprint | Failure matrix |
-| 14 | Consolidation and design review | [02 Agentic Workflows](02-agentic-workflows.md) + [06 Incremental Learning Labs](06-incremental-learning-labs.md) | Lab C output review | Architecture brief |
+2. Context window
+Imagine you’re talking to someone, but they have a very specific kind of memory. They can only remember the last X minutes of a conversation. Everything before that? Gone. Forgotten.
+That’s a context window.
+It’s the total amount of text measured in tokens that an AI model can see and consider at one time. This includes everything: your instructions, the conversation history, any documents you’ve shared, and the model’s own replies.
+Think of it like a whiteboard. The context window is the size of the whiteboard. You can write whatever you want on it. But once it’s full, you have to erase something old to write something new.
+You know what is more interesting?
+A small context window (like 4K tokens) means the AI can only work with a few pages of text at a time. Give it a long document, and it can only read chunks of it. A large context window (like 200K tokens) means you can literally paste an entire book and ask questions about it.
+This is why people got so excited when Claude announced a 200,000-token context window. Or when Gemini pushed towards 1 million. This thing fundamentally changes what you can do with the model.
+What is the practical lesson? If you’re working on something important like summarizing a long document or analyzing data, always be aware that your AI might be forgetting earlier parts of your conversation. That’s not a bug. That’s just the whiteboard running out of space.
 
-## Week 3 - Evals, Observability, and Production
 
-| Day | Focus | Primary material | Code or lab to use | End-of-day artifact |
-|---|---|---|---|---|
-| 15 | Eval strategy and datasets | [03 Evals, Observability, and Production](03-evals-observability-production.md) | Tiny Eval Dataset and Gate | Starter eval set |
-| 16 | Automated eval pipelines | [03 Evals, Observability, and Production](03-evals-observability-production.md) | Tiny Eval Dataset and Gate | Release gate policy |
-| 17 | Observability and tracing | [03 Evals, Observability, and Production](03-evals-observability-production.md) | Structured Trace Record | Trace example |
-| 18 | Safety and policy controls | [03 Evals, Observability, and Production](03-evals-observability-production.md) | Observability Checklist plus safety notes | Safety middleware checklist |
-| 19 | Deployment, scaling, and SLOs | [03 Evals, Observability, and Production](03-evals-observability-production.md) | Release gate plus reliability checklist | SLO and rollout note |
-| 20 | Postmortems and continuous improvement | [03 Evals, Observability, and Production](03-evals-observability-production.md) | Release gate retrospective | Postmortem draft |
-| 21 | Readiness review | [03 Evals, Observability, and Production](03-evals-observability-production.md) + [06 Incremental Learning Labs](06-incremental-learning-labs.md) | Lab D and readiness checklist | Production scorecard |
+3. Temperature
+This one is my personal favourite to explain, because once people hear it, they never forget it.
+When you ask an AI to write something, there’s a setting known as temperature, that decides how random or predictable the output will be.
+Low temperature (closer to 0) = the AI plays it safe. It picks the most likely, most expected word every single time. The output is consistent, accurate, and a little boring. Like that one guy who always sends the same email template.
+High temperature (closer to 1 or beyond) = the AI takes risks. It chooses surprising words, unusual turns, interesting ideas. Sometimes brilliant. But not always.
+Here’s a real example. Ask an AI to “complete the sentence: The cat sat on the…”
+At low temperature, it almost always says “mat” or “floor.” Predictable. Safe.
+At high temperature, it might say “philosophical dilemma” or “crumbling empire of Tuesday.”
+Creative? Yes. Useful for a legal brief? Absolutely not.
+So here’s the unwritten rule that most people don’t know:
+If you’re using AI for factual tasks such as summarizing, coding, extracting information, you want low temperature. The AI should be precise, not creative.
+If you’re using AI for creative tasks such as writing fiction, brainstorming, generating marketing copy, increase the temperature. You want the unexpected.
+Most consumer apps like ChatGPT don’t let you touch this dial directly. They’ve set it to a middle ground. But if you ever use an AI API or a developer tool, you’ll see this setting. And now you actually know what to do with it.
 
-## Week 4 - Portfolio, Stories, and Mock Loops
 
-| Day | Focus | Primary material | Code or lab to use | End-of-day artifact |
-|---|---|---|---|---|
-| 22 | Role targeting and competency mapping | [04 STAR Story System](04-star-story-system.md) | Role-to-Evidence Matrix | Competency matrix |
-| 23 | STAR story bank | [04 STAR Story System](04-star-story-system.md) | Story Card template | Six story draft |
-| 24 | Portfolio assembly and narrative | [04 STAR Story System](04-star-story-system.md) | Story Card plus case-study framing | Case-study outline |
-| 25 | Technical interview drills | [05 Interview Sprint Loops](05-interview-sprints-and-mock-loops.md) | 90-Second Drill Runner | Drill score sheet |
-| 26 | Behavioral and cross-functional communication | [05 Interview Sprint Loops](05-interview-sprints-and-mock-loops.md) | Example Scorecard and stakeholder rewrite | Behavioral answer sheet |
-| 27 | Full mock loop and feedback integration | [05 Interview Sprint Loops](05-interview-sprints-and-mock-loops.md) + [06 Incremental Learning Labs](06-incremental-learning-labs.md) | Lab E and mock loop | Revision log |
-| 28 | Final synthesis and launch plan | [05 Interview Sprint Loops](05-interview-sprints-and-mock-loops.md) | Step-by-Step Mock Loop Runbook | Two-week interview calendar |
+4. Hallucination
+This is the term everyone has heard, but not everyone understands why it happens and that’s the important part.
+Hallucination is when an AI gives out wrong answers with absolute confidence. No hesitation. A wrong, answer stated as fact.
+Example: You ask an AI about a book. It gives you a title, an author, a year, a plot summary all made up. The book doesn’t exist. But the AI states it as if it’s reading from Wikipedia.
+Why does this happen?
+Here’s the thing most people miss. AI language models are not databases. They don’t look up facts. They predict the next most likely token based on patterns they learned during training. They’re autocomplete on a massive scale.
+So when an AI doesn’t know something, it doesn’t say “I don’t know.” It generates what sounds like a correct answer because that’s literally what it was trained to do.
+The danger isn’t that AI makes mistakes. All tools make mistakes. The danger is that AI makes mistakes with the exact same confidence it uses when it’s right. It just answers.
+The practical lesson here is that never blindly trust AI for facts, statistics, medical advice, legal information, or anything where being wrong has real consequences. Use it as a starting point. Then verify.
+The people who understand hallucination don’t stop using AI. They just use it smarter.
 
-## How to Use This Map
 
-| Step | Action |
-|---|---|
-| 1 | Open the current day in the learning plan. |
-| 2 | Come here and open the mapped playbook module. |
-| 3 | Run the code snippet or lab that matches the day. |
-| 4 | Save the listed artifact so the session produces evidence. |
-| 5 | Convert that artifact into one interview bullet before you stop. |
-
-??? question "Interview Q: How do you turn a study plan into proof of capability?"
-    **Model Answer:**
-    I pair every study day with an artifact such as a script, a trace, an eval table, or a story card. That way the plan produces evidence I can reuse in interviews and portfolio discussion.
-
-    **Why this matters:**
-    Interview readiness depends on repeatable artifacts, not just reading completion.
-
-??? question "Interview Q: Why map days to specific modules instead of reading broadly?"
-    **Model Answer:**
-    Mapping each day to one module reduces context switching and makes progress measurable. It also ensures that every study session ends with a concrete artifact instead of a vague sense of coverage.
-
-    **Why this matters:**
-    Focused repetition is easier to sustain and easier to explain in interviews.
+5. RAG
+This is the most misunderstood concept of the five. And honestly? Once you get it, you’ll see it everywhere.
+RAG stands for Retrieval-Augmented Generation. It’s actually a very simple idea.
+Here’s the problem it solves. A regular AI model was trained on data up to a certain date. It knows nothing about your company’s internal documents. It knows nothing about events from last week. It knows nothing about that PDF you uploaded.
+So how does a product like “Chat with your PDF” or “Ask questions about this document” actually work?
+This is RAG.
+When you upload a document, the system doesn’t feed the whole thing into the AI’s brain. Instead, it breaks the document into chunks and stores them in a special kind of database called vector database that understands meaning rather than just keywords.
+Then, when you ask a question, the system first searches this database for the most relevant chunks. It retrieves those chunks. And then it feeds them to the AI along with your question, saying: “Here’s some relevant context. Now answer the question using this.”
+That’s it. Retrieve relevant stuff. Feed it to the AI. Generate an answer. RAG.
+Why does this matter?
+Because it’s the backbone of almost every useful AI product built in the last two years. Customer support bots that know your company’s policies. AI assistants that can answer questions from your legal documents. Tools that summarize research papers. All of it is built on RAG.
+And knowing this changes how you think about AI products. When an AI knows your documents, it’s not actually learned anything. It’s just performing a very smart search and feeding the results to a language model. The model is still the same. The context just changed.
 
 --8<-- "_abbreviations.md"
+
 

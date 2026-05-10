@@ -1,6 +1,7 @@
 # 02 - Agentic Workflows and Tool Reliability
 
-This module aligns to the baseline priority: hybrid systems that combine deterministic orchestration with constrained LLM reasoning.
+This module aligns to the baseline priority: hybrid systems that combine deterministic orchestration
+with constrained LLM reasoning.
 
 ## Baseline Position
 
@@ -13,11 +14,11 @@ and use the LLM for reasoning, extraction, generation, and planning where it add
 
 ## Workflow vs Agent vs Hybrid
 
-| Pattern | Best For | Risk Level | Recommendation |
-|---|---|---|---|
-| Deterministic workflow | Stable business logic | Low | Use by default |
-| Open-ended agent | Dynamic exploration | High | Constrain strongly |
-| Hybrid (recommended) | Real production systems | Medium | Deterministic control + LLM reasoning |
+| Pattern                | Best For                | Risk Level | Recommendation                        |
+|------------------------|-------------------------|------------|---------------------------------------|
+| Deterministic workflow | Stable business logic   | Low        | Use by default                        |
+| Open-ended agent       | Dynamic exploration     | High       | Constrain strongly                    |
+| Hybrid (recommended)   | Real production systems | Medium     | Deterministic control + LLM reasoning |
 
 ## Concepts to Know
 
@@ -64,25 +65,25 @@ Every tool should include:
 
 ## Day-by-Day Alignment
 
-| Day | Use this page for | Deliverable |
-|---|---|---|
-| Day 8 | Workflow vs agent and tool contracts | Tool schema set |
-| Day 9 | State, memory, and planning | Stateful loop sketch |
-| Day 10 | LangGraph-style node and edge thinking | Graph flow draft |
-| Day 11 | Multi-agent coordination | Supervisor-worker design |
-| Day 12 | Approval gates and rollback paths | Approval workflow |
-| Day 13 | Reliability hardening and replay | Failure matrix |
-| Day 14 | System design review and consolidation | Architecture brief |
+| Day    | Use this page for                      | Deliverable              |
+|--------|----------------------------------------|--------------------------|
+| Day 8  | Workflow vs agent and tool contracts   | Tool schema set          |
+| Day 9  | State, memory, and planning            | Stateful loop sketch     |
+| Day 10 | LangGraph-style node and edge thinking | Graph flow draft         |
+| Day 11 | Multi-agent coordination               | Supervisor-worker design |
+| Day 12 | Approval gates and rollback paths      | Approval workflow        |
+| Day 13 | Reliability hardening and replay       | Failure matrix           |
+| Day 14 | System design review and consolidation | Architecture brief       |
 
 ## Step-by-Step Agent Build Flow
 
-| Step | Action | Output |
-|---|---|---|
-| 1 | Define task scope and when the agent may act | Risk boundary |
-| 2 | Model tools as explicit contracts | Tool registry |
-| 3 | Add state fields for inputs, decisions, and results | Workflow state object |
-| 4 | Insert approval, retry, and escalation edges | Safer control flow |
-| 5 | Log every step for replay and review | Traceable run artifact |
+| Step | Action                                              | Output                 |
+|------|-----------------------------------------------------|------------------------|
+| 1    | Define task scope and when the agent may act        | Risk boundary          |
+| 2    | Model tools as explicit contracts                   | Tool registry          |
+| 3    | Add state fields for inputs, decisions, and results | Workflow state object  |
+| 4    | Insert approval, retry, and escalation edges        | Safer control flow     |
+| 5    | Log every step for replay and review                | Traceable run artifact |
 
 ## Example Code: Tool Contract and Validator
 
@@ -92,19 +93,19 @@ from dataclasses import dataclass
 
 @dataclass
 class ToolRequest:
-    tool_name: str
-    user_id: str
-    payload: dict
-    idempotency_key: str
+  tool_name: str
+  user_id: str
+  payload: dict
+  idempotency_key: str
 
 
 def validate_tool_request(request: ToolRequest) -> None:
-    if not request.user_id:
-        raise ValueError("user_id is required")
-    if not request.idempotency_key:
-        raise ValueError("idempotency_key is required")
-    if request.tool_name not in {"search_kb", "update_ticket", "cancel_subscription"}:
-        raise ValueError("unknown tool")
+  if not request.user_id:
+    raise ValueError("user_id is required")
+  if not request.idempotency_key:
+    raise ValueError("idempotency_key is required")
+  if request.tool_name not in {"search_kb", "update_ticket", "cancel_subscription"}:
+    raise ValueError("unknown tool")
 
 
 request = ToolRequest(
@@ -121,47 +122,49 @@ print(request)
 
 ```python
 def run_workflow(state: dict) -> dict:
-    state["step"] = "classify"
-    if state["risk_level"] == "high":
-        state["step"] = "await_approval"
-        if not state.get("approved"):
-            state["status"] = "cancelled"
-            return state
+  state["step"] = "classify"
+  if state["risk_level"] == "high":
+    state["step"] = "await_approval"
+    if not state.get("approved"):
+      state["status"] = "cancelled"
+      return state
 
-    state["step"] = "execute"
-    attempts = 0
-    while attempts < 2:
-        attempts += 1
-        if state.get("should_fail_once") and attempts == 1:
-            state["last_error"] = "timeout"
-            continue
-        state["status"] = "completed"
-        state["attempts"] = attempts
-        return state
-
-    state["status"] = "escalated"
+  state["step"] = "execute"
+  attempts = 0
+  while attempts < 2:
+    attempts += 1
+    if state.get("should_fail_once") and attempts == 1:
+      state["last_error"] = "timeout"
+      continue
+    state["status"] = "completed"
     state["attempts"] = attempts
     return state
 
+  state["status"] = "escalated"
+  state["attempts"] = attempts
+  return state
+
 
 initial_state = {
-    "risk_level": "high",
-    "approved": True,
-    "should_fail_once": True,
+  "risk_level": "high",
+  "approved": True,
+  "should_fail_once": True,
 }
 print(run_workflow(initial_state))
 ```
 
 ??? question "Interview Q: Why is a hybrid workflow usually better than a fully autonomous agent?"
-    **Model Answer:**
-    Hybrid systems keep control logic deterministic while still using the LLM where reasoning helps. That makes retries, permissions, approvals, and debugging much more predictable in production.
+**Model Answer:**
+Hybrid systems keep control logic deterministic while still using the LLM where reasoning helps.
+That makes retries, permissions, approvals, and debugging much more predictable in production.
 
     **Why this matters:**
     This is one of the clearest signals that you understand operational reliability.
 
 ??? question "Interview Q: What do you log for a tool-calling workflow?"
-    **Model Answer:**
-    I log the tool selected, validated inputs, approval result, execution status, retry count, and final outcome with a trace ID. That gives me enough information to explain and replay failures later.
+**Model Answer:**
+I log the tool selected, validated inputs, approval result, execution status, retry count, and final
+outcome with a trace ID. That gives me enough information to explain and replay failures later.
 
     **Why this matters:**
     Observability is a core differentiator between demos and real systems.
@@ -186,10 +189,10 @@ Practice answering these:
 ## Quick Lab (20-30 min)
 
 ??? note "Agent reliability micro-lab"
-    - Choose one workflow (ticketing, billing, or support).
-    - Define 3 tools and their schemas.
-    - Add one high-risk action requiring human approval.
-    - Simulate one retryable and one non-retryable failure path.
+- Choose one workflow (ticketing, billing, or support).
+- Define 3 tools and their schemas.
+- Add one high-risk action requiring human approval.
+- Simulate one retryable and one non-retryable failure path.
 
 
 ---
