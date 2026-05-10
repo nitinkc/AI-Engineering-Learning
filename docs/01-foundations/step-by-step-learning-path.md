@@ -13,13 +13,13 @@ Build interview-ready depth in:
 
 Use the structured day-by-day plan to execute this path with concrete daily objectives, theory drills, and labs.
 
-| Resource | Link |
-|---|---|
+| Resource           | Link                                                                         |
+|:-------------------|:-----------------------------------------------------------------------------|
 | 4-Week daily index | [Learning and Revision Plan - Daily System](learning-revision-plan/index.md) |
-| Week 1 pages | [Week 1 - LLM and RAG Core](learning-revision-plan/week-01/index.md) |
-| Week 2 pages | [Week 2 - Agents and LangGraph](learning-revision-plan/week-02/index.md) |
-| Week 3 pages | [Week 3 - Evals and Production](learning-revision-plan/week-03/index.md) |
-| Week 4 pages | [Week 4 - Interview Conversion](learning-revision-plan/week-04/index.md) |
+| Week 1 pages       | [Week 1 - LLM and RAG Core](learning-revision-plan/week-01/index.md)         |
+| Week 2 pages       | [Week 2 - Agents and LangGraph](learning-revision-plan/week-02/index.md)     |
+| Week 3 pages       | [Week 3 - Evals and Production](learning-revision-plan/week-03/index.md)     |
+| Week 4 pages       | [Week 4 - Interview Conversion](learning-revision-plan/week-04/index.md)     |
 
 ### Daily Loop (60-90 min)
 

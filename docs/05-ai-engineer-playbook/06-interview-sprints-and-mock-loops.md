@@ -134,15 +134,12 @@ After each mock:
 
 ## Quick Lab (20 min)
 
-<details>
-<summary>Mock loop lab</summary>
+??? note "Mock loop lab"
+	- Pick any 3 questions from the bank.
+	- Answer each in 90 seconds.
+	- Re-answer one question in 3 minutes.
+	- Grade yourself with the rubric and update one story.
 
-- Pick any 3 questions from the bank.
-- Answer each in 90 seconds.
-- Re-answer one question in 3 minutes.
-- Grade yourself with the rubric and update one story.
-
-</details>
 
 ---
 

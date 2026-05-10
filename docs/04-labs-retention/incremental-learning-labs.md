@@ -1,31 +1,16 @@
 # Incremental Learning Labs
 
-Use short drills to improve long-term recall and interview transfer.
+!!! note "Moved to the canonical reference module"
+	The maintained version of this topic is now [07 Incremental Learning Labs](../05-ai-engineer-playbook/07-incremental-learning-labs.md).
 
-## Lab Sequence
+## Where to go now
 
-- Lab A: RAG diagnosis sprint
-- Lab B: retrieval quality tuning sprint
-- Lab C: tool reliability sprint
-- Lab D: eval gate sprint
-- Lab E: STAR story sprint
+| If you need... | Open this page |
+|---|---|
+| The reusable deep dive | [07 Incremental Learning Labs](../05-ai-engineer-playbook/07-incremental-learning-labs.md) |
+| The day-by-day mapping | [08 Daily Material Map](../05-ai-engineer-playbook/08-daily-material-map.md) |
 
-## Weekly Cadence
-
-| Week | Focus | Runs |
-|---|---|---|
-| 1 | Labs A + B | 2 cycles |
-| 2 | Labs C + D | 2 cycles |
-| 3 | Lab E + weak areas | 3 cycles |
-| 4 | Full mock loop | 2 runs |
-
-## Deliverables
-
-- Root-cause table for failures
-- Metric delta snapshots
-- Workflow and error policy diagrams
-- Deploy gate decision notes
-- Refined interview scripts
+This page stays only as a compatibility stub so older links keep working.
 
 --8<-- "_abbreviations.md"
 

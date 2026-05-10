@@ -1,34 +1,16 @@
 # RAG Debugging and Quality
 
-## Pipeline-First Debugging
+!!! note "Moved to the canonical reference module"
+    The maintained version of this topic is now [02 RAG Debugging and Quality](../05-ai-engineer-playbook/02-rag-debugging-quality.md).
 
-Treat RAG failures as staged system issues.
+## Where to go now
 
-```mermaid
-flowchart TD
-  A[Bad answer] --> B{Source has answer?}
-  B -- No --> C[Fix ingestion and coverage]
-  B -- Yes --> D{Relevant chunk retrieved?}
-  D -- No --> E[Fix chunking, filters, hybrid search]
-  D -- Yes --> F{Prompt grounded on context?}
-  F -- No --> G[Fix prompt and context ordering]
-  F -- Yes --> H[Add validators, citations, refusal]
-```
+| If you need... | Open this page |
+|---|---|
+| The reusable deep dive | [02 RAG Debugging and Quality](../05-ai-engineer-playbook/02-rag-debugging-quality.md) |
+| The day-by-day study flow | [Week 1 of the Daily Learning Plan](../01-foundations/learning-revision-plan/week-01/index.md) |
 
-## Core Metrics
-
-- Retrieval hit rate
-- Context precision
-- Faithfulness
-- Citation accuracy
-- P95 latency
-- Cost per successful task
-
-## Micro-Lab
-
-- Pick 5 failed user questions.
-- Label each root cause: `coverage`, `retrieval`, `prompt`, `validation`.
-- Propose one measurable fix per failure.
+This page stays only as a compatibility stub so older links keep working.
 
 --8<-- "_abbreviations.md"
 

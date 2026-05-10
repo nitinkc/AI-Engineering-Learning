@@ -1,5 +1,10 @@
 # 08 - Daily Material Map for the 28-Day Plan
 
+> **Level:** Intermediate
+> **Pre-reading:** [Daily Learning Plan](../01-foundations/learning-revision-plan/index.md) · [01 Learning Path Companion](01-learning-path.md) · [07 Incremental Learning Labs](07-incremental-learning-labs.md)
+
+---
+
 This page turns the 28-day schedule into a usable study path. For each day, it points you to the exact supporting material, the example code to adapt, and the artifact you should produce by the end of the session.
 
 ```mermaid
@@ -78,5 +83,12 @@ graph LR
 
     **Why this matters:**
     Interview readiness depends on repeatable artifacts, not just reading completion.
+
+??? question "Interview Q: Why map days to specific modules instead of reading broadly?"
+    **Model Answer:**
+    Mapping each day to one module reduces context switching and makes progress measurable. It also ensures that every study session ends with a concrete artifact instead of a vague sense of coverage.
+
+    **Why this matters:**
+    Focused repetition is easier to sustain and easier to explain in interviews.
 
 --8<-- "_abbreviations.md"

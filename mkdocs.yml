@@ -75,22 +75,9 @@ nav:
       - Day 28: "01-foundations/learning-revision-plan/week-04/day-28-final-synthesis-and-interview-launch-plan.md"
     - STAR Method: "01-foundations/star_stories_ai_engineer_reference.md"
 
-  - "02 · Technical Depth":
-    - RAG Debugging and Quality: "02-technical-depth/rag-debugging-and-quality.md"
-    - Agentic Workflows and Tools: "02-technical-depth/agentic-workflows-and-tools.md"
-    - Evals, Observability, and Production: "02-technical-depth/evals-observability-and-production.md"
-
-  - "03 · Interview System":
-    - STAR+T System: "03-interview-system/star-plus-t-system.md"
-    - Mock Loop and Answer Drills: "03-interview-system/mock-loop-and-answer-drills.md"
-
-  - "04 · Labs Retention":
-    - Incremental Learning Labs: "04-labs-retention/incremental-learning-labs.md"
-    - Lab Integration Map: "04-labs-retention/lab-integration-map.md"
-
-  - "07 · AI Engineer Playbook":
+  - "02 · Reference Modules":
     - Overview: "05-ai-engineer-playbook/index.md"
-    - 01 Learning Path: "05-ai-engineer-playbook/01-learning-path.md"
+    - 01 Learning Path Companion: "05-ai-engineer-playbook/01-learning-path.md"
     - 02 RAG Debugging and Quality: "05-ai-engineer-playbook/02-rag-debugging-quality.md"
     - 03 Agentic Workflows: "05-ai-engineer-playbook/03-agentic-workflows.md"
     - 04 Evals, Observability, Production: "05-ai-engineer-playbook/04-evals-observability-production.md"
@@ -99,7 +86,7 @@ nav:
     - 07 Incremental Learning Labs: "05-ai-engineer-playbook/07-incremental-learning-labs.md"
     - 08 Daily Material Map: "05-ai-engineer-playbook/08-daily-material-map.md"
 
-  - "08 · Mini Projects":
+  - "03 · Mini Projects":
     - Overview: "06-mini-projects/index.md"
     - Week 1 RAG Foundations Lab: "06-mini-projects/01-week-1-rag-foundations-lab.md"
     - Week 2 Agent Reliability Lab: "06-mini-projects/02-week-2-agent-reliability-lab.md"
@@ -109,6 +96,19 @@ nav:
     - Learning Revision Condensed: "appendix/learning-revision-condensed.md"
     - STAR Stories Condensed: "appendix/star-stories-condensed.md"
     - Source Mapping: "appendix/source-mapping.md"
+
+not_in_nav: |
+  02-technical-depth/agentic-workflows-and-tools.md
+  02-technical-depth/evals-observability-and-production.md
+  02-technical-depth/rag-debugging-and-quality.md
+  03-interview-system/mock-loop-and-answer-drills.md
+  03-interview-system/star-plus-t-system.md
+  04-labs-retention/incremental-learning-labs.md
+  04-labs-retention/lab-integration-map.md
+
+exclude_docs: |
+  _abbreviations.md
+  06-mini-projects/code/**/README.md
 
 plugins:
   - search

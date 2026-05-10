@@ -1,37 +1,16 @@
 # Evals, Observability, and Production
 
-## Production Gate
+!!! note "Moved to the canonical reference module"
+	The maintained version of this topic is now [04 Evals, Observability, Production](../05-ai-engineer-playbook/04-evals-observability-production.md).
 
-A change should ship only when eval thresholds pass.
+## Where to go now
 
-| Layer | Example Metrics |
+| If you need... | Open this page |
 |---|---|
-| Retrieval | hit rate, MRR |
-| Generation | faithfulness, relevance, citation accuracy |
-| Agent | task success rate, retry rate |
-| Ops | P95 latency, error rate, cost per task |
+| The reusable deep dive | [04 Evals, Observability, Production](../05-ai-engineer-playbook/04-evals-observability-production.md) |
+| The day-by-day study flow | [Week 3 of the Daily Learning Plan](../01-foundations/learning-revision-plan/week-03/index.md) |
 
-## Observability Minimum
-
-- Prompt and model version logs
-- Retrieved context logs
-- Tool call input/output logs
-- Trace IDs across requests
-- Alerting for latency and cost spikes
-
-## Deployment Readiness
-
-- Secrets manager for credentials
-- Retry and timeout defaults
-- Fallback behavior defined
-- CI checks and rollback steps documented
-
-## Micro-Lab
-
-- Build a 10-question golden set.
-- Define 3 pass thresholds.
-- Compare baseline vs changed pipeline.
-- Write a deploy/no-deploy decision.
+This page stays only as a compatibility stub so older links keep working.
 
 --8<-- "_abbreviations.md"
 

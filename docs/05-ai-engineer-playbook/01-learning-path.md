@@ -1,6 +1,11 @@
-# 01 - Step-by-Step Learning Path
+# 01 - Learning Path Companion
 
-This module is a continuation of `ai_engineer_learning_revision_plan.md` and keeps the same baseline order and depth targets.
+> **Level:** Intermediate
+> **Pre-reading:** [Daily Learning Plan](../01-foundations/learning-revision-plan/index.md) · [Step-by-Step Learning Path](../01-foundations/step-by-step-learning-path.md)
+
+---
+
+This page is the reference companion to the daily plan, not a second primary schedule. Use it when you want the capability ladder, weekly checkpoints, and example code behind the 4-week learning system.
 
 ## Learning Goal
 

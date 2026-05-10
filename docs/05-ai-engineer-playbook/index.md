@@ -1,21 +1,34 @@
-# AI Engineer Interview Playbook: Learn, Build, Explain
+# AI Engineer Reference Modules: Build, Debug, Explain
 
-This playbook is the continuation layer for the baseline plan in
-`01-foundations/ai_engineer_learning_revision_plan.md`.
+> **Level:** Intermediate
+> **Pre-reading:** [Daily Learning Plan](../01-foundations/learning-revision-plan/index.md) · [Step-by-Step Learning Path](../01-foundations/step-by-step-learning-path.md)
 
-It keeps the same intent: interview prep through production engineering practice, not prompt-only theory.
+---
 
-## Baseline Alignment
+This section is the reusable reference layer for the site. The day-by-day execution now lives in the learning revision plan, while these pages hold the durable deep dives, worked examples, and reusable interview prep modules.
 
-This track mirrors the baseline sequence:
+Use the daily plan when you want to know what to do next. Use these reference modules when you want the fuller explanation, example code, or lab pattern behind that day.
 
-1. LLM application architecture
-2. RAG implementation and debugging
-3. Agentic workflows and tool reliability
-4. Evals, observability, and production readiness
-5. STAR+T story conversion
-6. Interview sprint and mock loop practice
-7. Incremental retention labs
+## What This Section Covers
+
+| Module type | What you get |
+|---|---|
+| Technical modules | RAG, agent workflows, and production-readiness deep dives |
+| Interview modules | STAR story conversion and timed mock-loop practice |
+| Retention modules | Incremental labs and a day-to-material mapping table |
+
+## Reference Module Sequence
+
+| Step | Module | Purpose |
+|---|---|---|
+| 1 | [01 Learning Path Companion](01-learning-path.md) | See the high-level capability ladder behind the 4-week plan. |
+| 2 | [02 RAG Debugging and Quality](02-rag-debugging-quality.md) | Build a pipeline-first debugging habit. |
+| 3 | [03 Agentic Workflows](03-agentic-workflows.md) | Learn safer tool orchestration and control patterns. |
+| 4 | [04 Evals, Observability, Production](04-evals-observability-production.md) | Turn experiments into measurable release decisions. |
+| 5 | [05 STAR Story System](05-star-story-system.md) | Convert technical work into credible interview stories. |
+| 6 | [06 Interview Sprints and Mock Loops](06-interview-sprints-and-mock-loops.md) | Rehearse delivery under time pressure. |
+| 7 | [07 Incremental Learning Labs](07-incremental-learning-labs.md) | Lock retention with short build-and-explain drills. |
+| 8 | [08 Daily Material Map](08-daily-material-map.md) | Map each study day to the right reference module and artifact. |
 
 ## Who This Is For
 
@@ -35,20 +48,22 @@ flowchart LR
 
 ## Recommended Order
 
-- Start with [01 Learning Path](01-learning-path.md).
-- Complete [02](02-rag-debugging-quality.md), [03](03-agentic-workflows.md), and [04](04-evals-observability-production.md) as one technical block.
-- Convert technical work into interview narratives in [05](05-star-story-system.md).
-- Practice delivery in [06](06-interview-sprints-and-mock-loops.md).
-- Lock retention with [07](07-incremental-learning-labs.md).
+| When you need... | Start here |
+|---|---|
+| A quick map of the whole system | [01 Learning Path Companion](01-learning-path.md) |
+| A deep technical block for Weeks 1 to 3 | [02](02-rag-debugging-quality.md), then [03](03-agentic-workflows.md), then [04](04-evals-observability-production.md) |
+| Interview conversion for Week 4 | [05](05-star-story-system.md), then [06](06-interview-sprints-and-mock-loops.md) |
+| Reinforcement and artifact creation | [07](07-incremental-learning-labs.md) and [08](08-daily-material-map.md) |
 
-## Cross-References to Core Site Modules
+## How This Connects to the Daily Plan
 
-- Foundations: [Step-by-Step Learning Path](../01-foundations/step-by-step-learning-path.md)
-- Technical depth: [RAG Debugging and Quality](../02-technical-depth/rag-debugging-and-quality.md)
-- Technical depth: [Agentic Workflows and Tools](../02-technical-depth/agentic-workflows-and-tools.md)
-- Technical depth: [Evals, Observability, and Production](../02-technical-depth/evals-observability-and-production.md)
-- Interview practice: [Mock Loop and Answer Drills](../03-interview-system/mock-loop-and-answer-drills.md)
-- Retention: [Incremental Learning Labs](../04-labs-retention/incremental-learning-labs.md)
+| Daily-plan layer | Best companion here |
+|---|---|
+| Week 1 daily pages | [02 RAG Debugging and Quality](02-rag-debugging-quality.md) |
+| Week 2 daily pages | [03 Agentic Workflows](03-agentic-workflows.md) |
+| Week 3 daily pages | [04 Evals, Observability, Production](04-evals-observability-production.md) |
+| Week 4 daily pages | [05 STAR Story System](05-star-story-system.md) and [06 Interview Sprints and Mock Loops](06-interview-sprints-and-mock-loops.md) |
+| Retention across all weeks | [07 Incremental Learning Labs](07-incremental-learning-labs.md) and [08 Daily Material Map](08-daily-material-map.md) |
 
 ---
 

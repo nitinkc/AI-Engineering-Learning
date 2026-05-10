@@ -1,38 +1,16 @@
 # Mock Loop and Answer Drills
 
-## Weekly Sprint Loop
+!!! note "Moved to the canonical reference module"
+	The maintained version of this topic is now [06 Interview Sprints and Mock Loops](../05-ai-engineer-playbook/06-interview-sprints-and-mock-loops.md).
 
-- Sprint A: technical clarity (architecture + failure modes)
-- Sprint B: story quality (metrics + tradeoffs)
-- Sprint C: pressure simulation (timed mock + corrections)
+## Where to go now
 
-## Question Bank
+| If you need... | Open this page |
+|---|---|
+| The reusable deep dive | [06 Interview Sprints and Mock Loops](../05-ai-engineer-playbook/06-interview-sprints-and-mock-loops.md) |
+| The day-by-day study flow | [Week 4 of the Daily Learning Plan](../01-foundations/learning-revision-plan/week-04/index.md) |
 
-- How do you debug wrong RAG answers?
-- How do you make tool-calling workflows reliable?
-- How do you evaluate prompt/model/retriever changes?
-- How do you balance latency, cost, and quality?
-- How do you deploy and monitor LLM systems?
-
-## Scoring Rubric (1-5)
-
-- Technical depth
-- Clarity
-- Production realism
-- Metrics quality
-- Tradeoff reasoning
-
-## Micro-Lab
-
-<details>
-<summary>30-minute mock</summary>
-
-- Choose 3 questions.
-- Answer each in 90 seconds.
-- Re-answer one question in 3 minutes.
-- Score yourself and rewrite weakest answer.
-
-</details>
+This page stays only as a compatibility stub so older links keep working.
 
 --8<-- "_abbreviations.md"
 

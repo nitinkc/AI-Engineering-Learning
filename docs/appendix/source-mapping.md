@@ -14,7 +14,7 @@ This page shows where condensed content came from.
 | `appendix/learning-revision-condensed.md` | Priorities, roadmap, interview framing, must-master topics |
 | `appendix/star-stories-condensed.md` | STAR+T structure, story bank, answer formulas, metrics |
 | `01-foundations/*` | 4-week progression and retention cadence |
-| `03-interview-system/*` | Story conversion and mock loop process |
+| `05-ai-engineer-playbook/*` | Technical deep dives, story conversion, mock loop process, and retention labs |
 
 ## Notes
 

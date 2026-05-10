@@ -161,15 +161,12 @@ print({"ship": release_gate(baseline_metrics), "metrics": baseline_metrics})
 
 ## Quick Lab (20 min)
 
-<details>
-<summary>Eval and observability micro-lab</summary>
+??? note "Eval and observability micro-lab"
+    - Build a tiny dataset with 10 questions.
+    - Define pass thresholds for 3 metrics.
+    - Run one baseline and one modified pipeline version.
+    - Decide deploy/no-deploy based on your gate.
 
-- Build a tiny dataset with 10 questions.
-- Define pass thresholds for 3 metrics.
-- Run one baseline and one modified pipeline version.
-- Decide deploy/no-deploy based on your gate.
-
-</details>
 
 ---
 

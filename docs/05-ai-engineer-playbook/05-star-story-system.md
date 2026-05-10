@@ -128,15 +128,12 @@ Context and constraints
 
 ## Quick Lab (15 min)
 
-<details>
-<summary>STAR compression lab</summary>
+??? note "STAR compression lab"
+	- Pick one project.
+	- Write STAR+T in 8 bullet points.
+	- Convert it to a 90-second answer.
+	- Record yourself once and tighten language.
 
-- Pick one project.
-- Write STAR+T in 8 bullet points.
-- Convert it to a 90-second answer.
-- Record yourself once and tighten language.
-
-</details>
 
 ??? question "Interview Q: What makes a STAR story credible for an AI engineer role?"
 	**Model Answer:**

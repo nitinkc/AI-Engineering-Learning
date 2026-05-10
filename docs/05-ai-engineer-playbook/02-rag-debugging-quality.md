@@ -204,16 +204,13 @@ Use this sequence when asked "How do you improve RAG quality?":
 
 ## Quick Lab (15-20 min)
 
-<details>
-<summary>RAG quality micro-lab</summary>
+??? note "RAG quality micro-lab"
+    - Pick 5 real questions from your project.
+    - For each, log top-5 chunks and final answer.
+    - Label each failure as: `coverage`, `retrieval`, `prompt`, or `validation`.
+    - Propose one fix and one metric to validate the fix.
+    - Add each failure to a small regression set and re-run after fixes.
 
-- Pick 5 real questions from your project.
-- For each, log top-5 chunks and final answer.
-- Label each failure as: `coverage`, `retrieval`, `prompt`, or `validation`.
-- Propose one fix and one metric to validate the fix.
-- Add each failure to a small regression set and re-run after fixes.
-
-</details>
 
 ---
 

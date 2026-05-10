@@ -185,15 +185,12 @@ Practice answering these:
 
 ## Quick Lab (20-30 min)
 
-<details>
-<summary>Agent reliability micro-lab</summary>
+??? note "Agent reliability micro-lab"
+    - Choose one workflow (ticketing, billing, or support).
+    - Define 3 tools and their schemas.
+    - Add one high-risk action requiring human approval.
+    - Simulate one retryable and one non-retryable failure path.
 
-- Choose one workflow (ticketing, billing, or support).
-- Define 3 tools and their schemas.
-- Add one high-risk action requiring human approval.
-- Simulate one retryable and one non-retryable failure path.
-
-</details>
 
 ---
 

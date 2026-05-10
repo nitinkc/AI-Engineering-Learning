@@ -1,12 +1,34 @@
 # 07 - Incremental Learning Labs (Memory-First)
 
-These labs are short, repeatable drills designed to make concepts stick.
+> **Level:** Intermediate
+> **Pre-reading:** [Daily Learning Plan](../01-foundations/learning-revision-plan/index.md) · [02 RAG Debugging and Quality](02-rag-debugging-quality.md) · [03 Agentic Workflows](03-agentic-workflows.md)
+
+---
+
+These labs are short, repeatable drills designed to make concepts stick. Each lab forces you to build something small, explain it from memory, and turn the result into an interview-ready artifact.
+
+## How the Labs Reinforce Learning
+
+```mermaid
+graph LR
+	A[Learn a concept] --> B[Run a short lab]
+	B --> C[Create one artifact]
+	C --> D[Explain it from memory]
+	D --> E[Convert it into interview evidence]
+
+	style A fill:#1976d2,color:#fff
+	style B fill:#ff9800,color:#fff
+	style E fill:#2e7d32,color:#fff
+```
 
 ## How to Run These Labs
 
-- Duration: 20-45 minutes each
-- Cadence: 3 labs per week
-- Method: build -> explain -> recall -> interview translation
+| Variable | Default |
+|---|---|
+| Duration | 20 to 45 minutes |
+| Cadence | 3 labs per week |
+| Method | build -> explain -> recall -> interview translation |
+| Output | one artifact plus one STAR bullet |
 
 ## Lab Sequence
 
@@ -42,9 +64,9 @@ These labs are short, repeatable drills designed to make concepts stick.
 
 ### Lab D - Eval Gate Sprint
 
-**Goal:** decide deploy/no-deploy from evidence.
+**Goal:** decide deploy or no-deploy from evidence.
 
-- Create 10-question golden set.
+- Create a 10-question golden set.
 - Define pass thresholds.
 - Run one baseline and one changed version.
 
@@ -60,15 +82,15 @@ These labs are short, repeatable drills designed to make concepts stick.
 
 **Output:** polished interview script.
 
-## Integration With Existing Notebooks
+## Best Companion Modules
 
-Pair these drills with existing site modules (continuation flow):
-
-- [RAG Debugging and Quality](../02-technical-depth/rag-debugging-and-quality.md)
-- [Agentic Workflows and Tools](../02-technical-depth/agentic-workflows-and-tools.md)
-- [Evals, Observability, and Production](../02-technical-depth/evals-observability-and-production.md)
-- [Mock Loop and Answer Drills](../03-interview-system/mock-loop-and-answer-drills.md)
-- [Incremental Learning Labs](../04-labs-retention/incremental-learning-labs.md)
+| Lab | Best module to pair with | Why it fits |
+|---|---|---|
+| Lab A | [02 RAG Debugging and Quality](02-rag-debugging-quality.md) | It gives you the failure taxonomy and debug order. |
+| Lab B | [02 RAG Debugging and Quality](02-rag-debugging-quality.md) | It supplies the retrieval metrics and prototype flow. |
+| Lab C | [03 Agentic Workflows](03-agentic-workflows.md) | It defines schemas, approvals, retries, and escalation. |
+| Lab D | [04 Evals, Observability, Production](04-evals-observability-production.md) | It provides the release-gate and trace mindset. |
+| Lab E | [05 STAR Story System](05-star-story-system.md) and [06 Interview Sprints and Mock Loops](06-interview-sprints-and-mock-loops.md) | They turn lab outputs into interview-ready stories. |
 
 ## Day-by-Day Reinforcement Map
 
@@ -95,11 +117,11 @@ Pair these drills with existing site modules (continuation flow):
 ```yaml
 change: reranker-v2
 baseline:
-	faithfulness: 0.82
-	retrieval_hit_rate: 0.76
+  faithfulness: 0.82
+  retrieval_hit_rate: 0.76
 candidate:
-	faithfulness: 0.89
-	retrieval_hit_rate: 0.84
+  faithfulness: 0.89
+  retrieval_hit_rate: 0.84
 decision: deploy
 reason: all threshold metrics improved and latency remained within budget
 ```
@@ -115,11 +137,25 @@ Project context
 ```
 
 ??? question "Interview Q: Why are these short labs useful if you already know the theory?"
-		**Model Answer:**
-		They force retrieval from memory, artifact creation, and explanation under time pressure. That is closer to interview performance and production troubleshooting than passive review.
+	**Model Answer:**
+	They force retrieval from memory, artifact creation, and explanation under time pressure. That is closer to interview performance and production troubleshooting than passive review.
 
-		**Why this matters:**
-		Strong preparation depends on repeated transfer, not one-time reading.
+	**Why this matters:**
+	Strong preparation depends on repeated transfer, not one-time reading.
+
+??? question "Interview Q: What makes a lab output interview-worthy?"
+	**Model Answer:**
+	A lab becomes interview-worthy when it produces evidence such as a metrics table, a workflow diagram, or a release decision backed by tradeoffs. The artifact matters more than the time spent reading.
+
+	**Why this matters:**
+	Interviewers respond to proof of execution, not vague study claims.
+
+??? question "Interview Q: How do you keep labs from becoming random practice?"
+	**Model Answer:**
+	I tie each lab to one module, one day in the plan, one artifact, and one follow-up recall drill. That creates a small but repeatable system instead of disconnected exercises.
+
+	**Why this matters:**
+	Structured repetition is what turns short practice into long-term retention.
 
 ## 4-Week Retention Plan
 
@@ -146,90 +182,7 @@ After each lab output, add two artifacts:
 
 ---
 
-You can now revisit [Incremental Learning Labs](../04-labs-retention/incremental-learning-labs.md) with an interview-first mindset.
-
---8<-- "_abbreviations.md"
-*** Add File: /Users/nchaur590@cable.comcast.com/Programming/playbook-site/docs/07-ai-engineer-playbook/08-daily-material-map.md
-# 08 - Daily Material Map for the 28-Day Plan
-
-This page turns the 28-day schedule into a usable study path. For each day, it points you to the exact supporting material, the example code to adapt, and the artifact you should produce by the end of the session.
-
-```mermaid
-graph LR
-	A[Daily Plan] --> B[Playbook Module]
-	B --> C[Code or Lab]
-	C --> D[Artifact]
-	D --> E[Interview Recall]
-
-	style A fill:#1976d2,color:#fff
-	style C fill:#ff9800,color:#fff
-	style E fill:#2e7d32,color:#fff
-```
-
-## Week 1 - Foundations, RAG, and Retrieval
-
-| Day | Focus | Primary material | Code or lab to use | End-of-day artifact |
-|---|---|---|---|---|
-| 1 | LLM pipeline map and model basics | [01 Learning Path](01-learning-path.md) | Prompt Builder and Token Budget | System diagram |
-| 2 | Prompting patterns and guardrails | [01 Learning Path](01-learning-path.md) | Prompt Builder and Token Budget | Prompt template library |
-| 3 | Embeddings and retrieval basics | [02 RAG Debugging and Quality](02-rag-debugging-quality.md) | Minimal Grounded Retrieval Prototype | Chunking experiment note |
-| 4 | RAG architecture and grounding | [02 RAG Debugging and Quality](02-rag-debugging-quality.md) | Minimal Grounded Retrieval Prototype | Grounded QA script |
-| 5 | RAG quality debugging | [02 RAG Debugging and Quality](02-rag-debugging-quality.md) | Failure Logging for RAG Debugging | Root-cause table |
-| 6 | Multimodal and long-context strategies | [01 Learning Path](01-learning-path.md) | Long-Context Map-Reduce Scaffold | Long-doc summary scaffold |
-| 7 | Consolidation and retrieval drill | [07 Incremental Learning Labs](07-incremental-learning-labs.md) | Lab A or Lab B | One-page debugging checklist |
-
-## Week 2 - Agents, LangGraph, and Reliability
-
-| Day | Focus | Primary material | Code or lab to use | End-of-day artifact |
-|---|---|---|---|---|
-| 8 | Agentic patterns and tool calling | [03 Agentic Workflows](03-agentic-workflows.md) | Tool Contract and Validator | Tool schema set |
-| 9 | Planning, memory, and state management | [03 Agentic Workflows](03-agentic-workflows.md) | Stateful Workflow with Retry and Approval | State transition sketch |
-| 10 | LangGraph fundamentals | [03 Agentic Workflows](03-agentic-workflows.md) | Stateful Workflow with Retry and Approval | Node-edge graph draft |
-| 11 | Multi-agent coordination | [03 Agentic Workflows](03-agentic-workflows.md) | Supervisor-worker adaptation of workflow example | Multi-agent handoff design |
-| 12 | Human-in-the-loop and approvals | [03 Agentic Workflows](03-agentic-workflows.md) | Stateful Workflow with Retry and Approval | Approval gate path |
-| 13 | Reliability hardening for agents | [03 Agentic Workflows](03-agentic-workflows.md) + [07 Incremental Learning Labs](07-incremental-learning-labs.md) | Tool Reliability Sprint | Failure matrix |
-| 14 | Consolidation and design review | [03 Agentic Workflows](03-agentic-workflows.md) + [07 Incremental Learning Labs](07-incremental-learning-labs.md) | Lab C output review | Architecture brief |
-
-## Week 3 - Evals, Observability, and Production
-
-| Day | Focus | Primary material | Code or lab to use | End-of-day artifact |
-|---|---|---|---|---|
-| 15 | Eval strategy and datasets | [04 Evals, Observability, and Production](04-evals-observability-production.md) | Tiny Eval Dataset and Gate | Starter eval set |
-| 16 | Automated eval pipelines | [04 Evals, Observability, and Production](04-evals-observability-production.md) | Tiny Eval Dataset and Gate | Release gate policy |
-| 17 | Observability and tracing | [04 Evals, Observability, and Production](04-evals-observability-production.md) | Structured Trace Record | Trace example |
-| 18 | Safety and policy controls | [04 Evals, Observability, and Production](04-evals-observability-production.md) | Observability Checklist plus safety notes | Safety middleware checklist |
-| 19 | Deployment, scaling, and SLOs | [04 Evals, Observability, and Production](04-evals-observability-production.md) | Release gate plus reliability checklist | SLO and rollout note |
-| 20 | Postmortems and continuous improvement | [04 Evals, Observability, and Production](04-evals-observability-production.md) | Release gate retrospective | Postmortem draft |
-| 21 | Readiness review | [04 Evals, Observability, and Production](04-evals-observability-production.md) + [07 Incremental Learning Labs](07-incremental-learning-labs.md) | Lab D and readiness checklist | Production scorecard |
-
-## Week 4 - Portfolio, Stories, and Mock Loops
-
-| Day | Focus | Primary material | Code or lab to use | End-of-day artifact |
-|---|---|---|---|---|
-| 22 | Role targeting and competency mapping | [05 STAR Story System](05-star-story-system.md) | Role-to-Evidence Matrix | Competency matrix |
-| 23 | STAR story bank | [05 STAR Story System](05-star-story-system.md) | Story Card template | Six story draft |
-| 24 | Portfolio assembly and narrative | [05 STAR Story System](05-star-story-system.md) | Story Card plus case-study framing | Case-study outline |
-| 25 | Technical interview drills | [06 Interview Sprint Loops](06-interview-sprints-and-mock-loops.md) | 90-Second Drill Runner | Drill score sheet |
-| 26 | Behavioral and cross-functional communication | [06 Interview Sprint Loops](06-interview-sprints-and-mock-loops.md) | Example Scorecard and stakeholder rewrite | Behavioral answer sheet |
-| 27 | Full mock loop and feedback integration | [06 Interview Sprint Loops](06-interview-sprints-and-mock-loops.md) + [07 Incremental Learning Labs](07-incremental-learning-labs.md) | Lab E and mock loop | Revision log |
-| 28 | Final synthesis and launch plan | [06 Interview Sprint Loops](06-interview-sprints-and-mock-loops.md) | Step-by-Step Mock Loop Runbook | Two-week interview calendar |
-
-## How to Use This Map
-
-| Step | Action |
-|---|---|
-| 1 | Open the current day in the learning plan. |
-| 2 | Come here and open the mapped playbook module. |
-| 3 | Run the code snippet or lab that matches the day. |
-| 4 | Save the listed artifact so the session produces evidence. |
-| 5 | Convert that artifact into one interview bullet before you stop. |
-
-??? question "Interview Q: How do you turn a study plan into proof of capability?"
-	**Model Answer:**
-	I pair every study day with an artifact such as a script, a trace, an eval table, or a story card. That way the plan produces evidence I can reuse in interviews and portfolio discussion.
-
-	**Why this matters:**
-	Interview readiness depends on repeatable artifacts, not just reading completion.
+Next: [08 Daily Material Map](08-daily-material-map.md)
 
 --8<-- "_abbreviations.md"
 

@@ -26,7 +26,6 @@ When writing or suggesting content for this site:
 
 ### Every Article Must Have
 
-1. **Level badge** — `🟢 Beginner | 🟡 Intermediate | 🔴 Advanced`
 2. **Pre-reading links** — Links to prerequisite articles
 3. **Plain-language intro** — 2–3 sentences before using jargon
 4. **Clear explanation** — Main concept with examples

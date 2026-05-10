@@ -1,29 +1,17 @@
 # Lab Integration Map
 
-This site is standalone, but maps directly to your existing notebook assets.
+!!! warning "Deprecated page"
+	This legacy mapping page is no longer maintained because the old notebook references are stale.
 
-## Existing Notebook Mapping (Repository)
+## Use these pages instead
 
-Use these source notebooks from the main project:
-
-- `docs/labs/notebooks/lab_5_exact_match_problem.ipynb`
-- `docs/labs/notebooks/lab_6_hybrid_search.ipynb`
-- `docs/labs/notebooks/lab_7_complete_rag.ipynb`
-
-## Interview Drill Mapping
-
-| Notebook | Interview Skill |
+| Need | Canonical page |
 |---|---|
-| Lab 5 | Explain semantic vs exact-match failure |
-| Lab 6 | Explain hybrid retrieval tradeoffs |
-| Lab 7 | Explain end-to-end architecture and eval gates |
+| Current lab system | [07 Incremental Learning Labs](../05-ai-engineer-playbook/07-incremental-learning-labs.md) |
+| Day-by-day artifact mapping | [08 Daily Material Map](../05-ai-engineer-playbook/08-daily-material-map.md) |
+| Daily execution plan | [Learning and Revision Plan - Daily System](../01-foundations/learning-revision-plan/index.md) |
 
-## Practice Pattern
-
-1. Run one notebook experiment.
-2. Summarize result in 5 bullets.
-3. Convert to STAR+T mini-story.
-4. Rehearse 90-second explanation.
+This page remains only to preserve older links.
 
 --8<-- "_abbreviations.md"
 
