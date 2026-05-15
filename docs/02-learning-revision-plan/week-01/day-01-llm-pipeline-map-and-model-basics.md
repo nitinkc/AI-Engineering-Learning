@@ -55,39 +55,39 @@ are doing your own fine-tuning or probing for raw next-token probabilities in re
 
 Here is what actually happens end-to-end when a user sends a message to your LLM-powered app:
 
-1. User input — The user types a message in the UI.
+1. **User input** — The user types a message in the UI.
 
-2. Request handling — The frontend sends the message to your backend/API layer.
+2. **Request handling** — The frontend sends the message to your backend/API layer.
 
-3. Input pre-processing — Your backend validates the request, checks auth/session, applies rate
+3. **Input pre-processing** — Your backend validates the request, checks auth/session, applies rate
    limits, sanitises or normalises the input if needed, and may apply safety checks or query
    rewriting.
 
-4. Retrieval, if using RAG — The backend converts the user query into an embedding or search query,
-   retrieves relevant documents or chunks from a vector database/search index, optionally reranks
-   them, and selects the best context.
+4. **Retrieval, if using RAG** — The backend converts the user query into an embedding or search
+   query, retrieves relevant documents or chunks from a vector database/search index, optionally
+   reranks them, and selects the best context.
 
-5. Prompt construction — Your backend builds the final prompt by assembling system instructions,
-   application rules, chat history, retrieved context, and the user message.
+5. **Prompt construction** — Your backend builds the final prompt by assembling system
+   instructions, application rules, chat history, retrieved context, and the user message.
 
-6. Tokenisation — The final prompt is converted into token IDs using the model's tokenizer, such as
-   `tiktoken`-style BPE for OpenAI models or SentencePiece/BPE-style tokenizers for many
+6. **Tokenisation** — The final prompt is converted into token IDs using the model's tokenizer,
+   such as `tiktoken`-style BPE for OpenAI models or SentencePiece/BPE-style tokenizers for many
    open-source models.
 
-7. Model/API call — The request is sent to the model endpoint, such as OpenAI, Anthropic, or your
-   hosted vLLM server. In most hosted APIs, your app sends text/messages, and the provider handles
-   tokenisation internally.
+7. **Model/API call** — The request is sent to the model endpoint, such as OpenAI, Anthropic, or
+   your hosted vLLM server. In most hosted APIs, your app sends text/messages, and the provider
+   handles tokenisation internally.
 
-8. Model inference — The Transformer runs forward passes, producing a probability distribution over
-   the vocabulary. It selects the next token using greedy decoding or sampling, appends it, and
-   repeats until it hits a stop token, stop sequence, or max token limit.
+8. **Model inference** — The Transformer runs forward passes, producing a probability distribution
+   over the vocabulary. It selects the next token using greedy decoding or sampling, appends it,
+   and repeats until it hits a stop token, stop sequence, or max token limit.
 
-9. De-tokenisation — Generated token IDs are converted back into text.
+9. **De-tokenisation** — Generated token IDs are converted back into text.
 
-10. Output post-processing — Your backend validates the output, parses JSON if required, applies
-    length checks/content filters, formats the response for the UI, and logs the trace.
+10. **Output post-processing** — Your backend validates the output, parses JSON if required,
+    applies length checks/content filters, formats the response for the UI, and logs the trace.
 
-11. Response — The formatted answer reaches the user.
+11. **Response** — The formatted answer reaches the user.
 
 Every one of these steps is an opportunity for failure and a lever for improvement. Senior engineers
 know which step to inspect first when quality drops.
