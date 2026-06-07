@@ -1,7 +1,5 @@
 # Learning and Revision Plan - Daily System (4 Weeks)
 
-Pre-reading: [Foundations Overview](../01-foundations/index.md) · [01 RAG Debugging and Quality](../01-foundations/01-rag-debugging-quality.md)
-
 This structure breaks the 4-week plan into one page per day so execution is systematic. Every day
 includes learning objectives, what to learn, theory-to-practice drills, and hands-on labs.
 

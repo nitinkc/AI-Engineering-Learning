@@ -1,4 +1,4 @@
-*[RAG]: Retrieval-Augmented Generation
+*[RAG]: Retrieval-Augmented Generation. A regular AI model was trained on data up to a certain date. It knows nothing about your company’s internal documents or recent events. 
 *[BM25]: Okapi BM25 ranking function
 *[LLM]: Large Language Model
 *[LLMOps]: Large Language Model Operations

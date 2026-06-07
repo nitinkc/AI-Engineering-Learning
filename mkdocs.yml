@@ -77,8 +77,10 @@ nav:
       - 03 Evals, Observability, Production: "01-foundations/03-evals-observability-production.md"
       - 04 STAR Story System: "01-foundations/04-star-story-system.md"
       - 05 Interview Sprints and Mock Loops: "01-foundations/05-interview-sprints-and-mock-loops.md"
+      - 06 Neural Networks : "01-foundations/ml_neural_networks_cnn_learning_guide.md"
 
   - "02 · Preparations":
+      - Plan: "02-learning-revision-plan/index.md"
       - Week 1 · LLM and RAG Core:
           - Overview: "02-learning-revision-plan/week-01/index.md"
           - Day 1: "02-learning-revision-plan/week-01/day-01-llm-pipeline-map-and-model-basics.md"
@@ -121,10 +123,6 @@ nav:
       - Week 1 RAG Foundations Lab: "03-mini-projects/01-week-1-rag-foundations-lab.md"
       - Week 2 Agent Reliability Lab: "03-mini-projects/02-week-2-agent-reliability-lab.md"
       - Week 3 Eval and Ops Lab: "03-mini-projects/03-week-3-eval-observability-lab.md"
-
-not_in_nav: |
-  03-mini-projects/incremental-learning-labs.md
-  03-mini-projects/lab-integration-map.md
 
 exclude_docs: |
   _abbreviations.md
