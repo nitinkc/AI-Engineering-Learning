@@ -23,13 +23,13 @@ Run the commands below from an activated project venv.
 cd docs/03-mini-projects/code/week03-eval-observability
 
 # Compare baseline vs candidate
-python cli.py compare
+04-python cli.py compare
 
 # Evaluate one run with trace data
-python cli.py run --name candidate
+04-python cli.py run --name candidate
 
 # Run tests
-python -m pytest tests/ -v
+04-python -m pytest tests/ -v
 ```
 
 ## Portfolio Structure

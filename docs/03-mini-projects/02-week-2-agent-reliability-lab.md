@@ -24,13 +24,13 @@ Run the commands below from an activated project venv.
 cd docs/03-mini-projects/code/week02-agent-reliability
 
 # High-risk action with approval gate
-python cli.py cancel_subscription --user-id user-42 --subscription-id sub-101
+04-python cli.py cancel_subscription --user-id user-42 --subscription-id sub-101
 
 # Simulate retry path
-python cli.py cancel_subscription --user-id user-42 --subscription-id sub-101 --fail-once
+04-python cli.py cancel_subscription --user-id user-42 --subscription-id sub-101 --fail-once
 
 # Run tests
-python -m pytest tests/ -v
+04-python -m pytest tests/ -v
 ```
 
 ## Portfolio Structure

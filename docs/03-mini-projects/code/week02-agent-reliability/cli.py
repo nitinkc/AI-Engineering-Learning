@@ -3,16 +3,16 @@
 Usage examples
 --------------
   # Cancel a subscription (high-risk, approval required):
-  python cli.py cancel_subscription --user-id user-42 --subscription-id sub-101
+  04-python cli.py cancel_subscription --user-id user-42 --subscription-id sub-101
 
   # Search the knowledge base (low-risk, no approval):
-  python cli.py search_kb --user-id user-7 --query "password reset procedure"
+  04-python cli.py search_kb --user-id user-7 --query "password reset procedure"
 
   # Simulate a retry by injecting a first-attempt failure:
-  python cli.py cancel_subscription --user-id user-42 --subscription-id sub-101 --fail-once
+  04-python cli.py cancel_subscription --user-id user-42 --subscription-id sub-101 --fail-once
 
   # Reject the approval gate:
-  python cli.py cancel_subscription --user-id user-42 --subscription-id sub-101 --no-approve
+  04-python cli.py cancel_subscription --user-id user-42 --subscription-id sub-101 --no-approve
 """
 from __future__ import annotations
 

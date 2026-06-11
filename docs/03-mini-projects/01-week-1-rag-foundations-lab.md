@@ -24,13 +24,13 @@ Run the commands below from an activated project venv.
 cd docs/03-mini-projects/code/week01-rag-foundations
 
 # Ask a question
-python cli.py query "How do I reset an expired API key?"
+04-python cli.py query "How do I reset an expired API key?"
 
 # Summarize long text from stdin
-echo "Long document text here." | python cli.py summarize
+echo "Long document text here." | 04-python cli.py summarize
 
 # Run tests
-python -m pytest tests/ -v
+04-python -m pytest tests/ -v
 ```
 
 ## Portfolio Structure

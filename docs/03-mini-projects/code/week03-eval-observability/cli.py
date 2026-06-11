@@ -3,14 +3,14 @@
 Usage examples
 --------------
   # Compare baseline vs candidate (default):
-  python cli.py compare
+  04-python cli.py compare
 
   # Evaluate a single named run:
-  python cli.py run --name baseline
-  python cli.py run --name candidate
+  04-python cli.py run --name baseline
+  04-python cli.py run --name candidate
 
   # Show release gate thresholds:
-  python cli.py thresholds
+  04-python cli.py thresholds
 """
 from __future__ import annotations
 

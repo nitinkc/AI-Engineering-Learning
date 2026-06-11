@@ -275,7 +275,7 @@ triggers anxiety.
 """
 mock_scorer.py
 Score a mock interview answer against the 5-dimension rubric.
-Run interactively: python mock_scorer.py
+Run interactively: 04-python mock_scorer.py
 """
 
 from dataclasses import dataclass, field
@@ -382,7 +382,7 @@ if __name__ == "__main__":
 Usage:
 
 ```bash
-python mock_scorer.py
+04-python mock_scorer.py
 ```
 
 Enter each question you answered in your mock session, then score each dimension. The script prints

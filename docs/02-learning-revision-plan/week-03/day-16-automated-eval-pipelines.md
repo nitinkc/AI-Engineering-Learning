@@ -267,10 +267,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-04-python@v5
         with: { python-version: "3.11" }
       - run: pip install ragas langchain-openai datasets
-      - run: python eval_harness.py
+      - run: 04-python eval_harness.py
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 ```

@@ -25,19 +25,19 @@ week01-rag-foundations/
 # From this directory — no install needed
 
 # Ask a question
-python cli.py query "How do I reset an expired API key?"
+04-python cli.py query "How do I reset an expired API key?"
 
 # Summarize via stdin
-echo "Long document text here..." | python cli.py summarize
+echo "Long document text here..." | 04-python cli.py summarize
 
 # Custom corpus
-python cli.py --corpus my_data.json query "What is the escalation policy?"
+04-python cli.py --corpus my_data.json query "What is the escalation policy?"
 ```
 
 ## Running Tests
 
 ```bash
-python -m pytest tests/ -v
+04-python -m pytest tests/ -v
 ```
 
 ## Key Concepts Covered

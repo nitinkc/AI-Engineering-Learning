@@ -3,13 +3,13 @@
 Usage examples
 --------------
   # Ask a question against the default corpus:
-  python cli.py query "How do I reset an expired API key?"
+  04-python cli.py query "How do I reset an expired API key?"
 
   # Summarize a document passed via stdin:
-  echo "Long document text here..." | python cli.py summarize
+  echo "Long document text here..." | 04-python cli.py summarize
 
   # Use a custom corpus file:
-  python cli.py --corpus my_corpus.json query "What is the escalation policy?"
+  04-python cli.py --corpus my_corpus.json query "What is the escalation policy?"
 """
 from __future__ import annotations
 

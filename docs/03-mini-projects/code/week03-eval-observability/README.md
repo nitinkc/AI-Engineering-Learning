@@ -22,19 +22,19 @@ week03-eval-observability/
 # From this directory — no install needed
 
 # Compare baseline vs candidate:
-python cli.py compare
+04-python cli.py compare
 
 # Evaluate a single run with trace:
-python cli.py run --name candidate
+04-python cli.py run --name candidate
 
 # Show release gate thresholds:
-python cli.py thresholds
+04-python cli.py thresholds
 ```
 
 ## Running Tests
 
 ```bash
-python -m pytest tests/ -v
+04-python -m pytest tests/ -v
 ```
 
 ## Key Concepts Covered

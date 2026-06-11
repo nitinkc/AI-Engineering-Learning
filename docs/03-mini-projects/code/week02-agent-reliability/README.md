@@ -23,22 +23,22 @@ week02-agent-reliability/
 # From this directory — no install needed
 
 # Cancel a subscription (high-risk, prompts approval gate):
-python cli.py cancel_subscription --user-id user-42 --subscription-id sub-101
+04-python cli.py cancel_subscription --user-id user-42 --subscription-id sub-101
 
 # Search KB (low-risk, no gate):
-python cli.py search_kb --user-id user-7 --query "password reset procedure"
+04-python cli.py search_kb --user-id user-7 --query "password reset procedure"
 
 # Simulate a retry:
-python cli.py cancel_subscription --user-id user-42 --subscription-id sub-101 --fail-once
+04-python cli.py cancel_subscription --user-id user-42 --subscription-id sub-101 --fail-once
 
 # Reject the approval gate:
-python cli.py cancel_subscription --user-id user-42 --subscription-id sub-101 --no-approve
+04-python cli.py cancel_subscription --user-id user-42 --subscription-id sub-101 --no-approve
 ```
 
 ## Running Tests
 
 ```bash
-python -m pytest tests/ -v
+04-python -m pytest tests/ -v
 ```
 
 ## Key Concepts Covered
