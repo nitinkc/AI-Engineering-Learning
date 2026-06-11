@@ -123,6 +123,10 @@ nav:
       - Week 1 RAG Foundations Lab: "03-mini-projects/01-week-1-rag-foundations-lab.md"
       - Week 2 Agent Reliability Lab: "03-mini-projects/02-week-2-agent-reliability-lab.md"
       - Week 3 Eval and Ops Lab: "03-mini-projects/03-week-3-eval-observability-lab.md"
+  - "04 · Python Coding Drills":
+      - Part1: "python/01_foundation_mutability_and_data_structures.md"
+      - Part2: "python/02_scalpel_pythonic_idioms.md"
+      - Part3: "python/03_forge_algorithms_and_interview.md"
 
 exclude_docs: |
   _abbreviations.md

@@ -6,6 +6,8 @@ This mini project gives Week 1 a runnable baseline. It uses only the Python stan
 can focus on the pipeline shape: source data, chunking, retrieval, grounded answers, token
 budgeting, and long-context summarization.
 
+Run the commands below from an activated project venv.
+
 ## What You Will Build
 
 | Capability          | Output                    |
@@ -22,13 +24,13 @@ budgeting, and long-context summarization.
 cd docs/03-mini-projects/code/week01-rag-foundations
 
 # Ask a question
-python3 cli.py query "How do I reset an expired API key?"
+python cli.py query "How do I reset an expired API key?"
 
 # Summarize long text from stdin
-echo "Long document text here." | python3 cli.py summarize
+echo "Long document text here." | python cli.py summarize
 
 # Run tests
-python3 -m pytest tests/ -v
+python -m pytest tests/ -v
 ```
 
 ## Portfolio Structure

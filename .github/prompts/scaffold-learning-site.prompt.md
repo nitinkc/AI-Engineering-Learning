@@ -216,7 +216,7 @@ theme:
 3. Update navigation structure in mkdocs.yml if needed
 4. Fill in article files with your content (use `/fill-article-template` agent)
 5. Add abbreviations to `_abbreviations.md`
-6. Run `mkdocs serve` and test
+6. Run `python -m mkdocs serve` and test
 
 ### Option 2: Scaffold From Scratch
 
@@ -226,7 +226,7 @@ theme:
 4. **Create article files** — fundamentals (real content), intermediate/advanced (with stubs)
 5. **Write content** — Fill in fundamentals fully; create stubs for intermediate/advanced
 6. **Validate** — Check all nav entries exist, all imports work, all files render
-7. **Test** — `pip install -r requirements.txt && mkdocs serve`, verify theme toggle, search,
+7. **Test** — `python -m pip install -r requirements.txt && python -m mkdocs serve`, verify theme toggle, search,
    Mermaid, math
 
 ---
@@ -238,7 +238,7 @@ After scaffolding, confirm to the user:
 - ✅ **Files created** — List main files
 - 📋 **Content status** — What has full content vs stubs
 - 🎨 **Theme** — Confirm colors and mode toggle working
-- 🚀 **How to run** — `pip install -r requirements.txt && mkdocs serve`
+- 🚀 **How to run** — `python -m pip install -r requirements.txt && python -m mkdocs serve`
 - ➡️ **Next steps** — Suggest using `/fill-article-template` agent to complete content
 - 📚 **Reference** — Link to the learning-site-template if using scaffold option
 
@@ -255,7 +255,7 @@ Go to /Users/sgovinda/Learn/learning-site-template and:
 1. Clone/copy the folder
 2. Edit mkdocs.yml to update site_name and colors
 3. Use /fill-article-template to add content for each section
-4. Run mkdocs serve to test
+4. Run `python -m mkdocs serve` to test
 ```
 
 ### Option 2: Scaffold a New Site

@@ -5,6 +5,8 @@ Pre-reading: [03 Evals, Observability, and Production](../01-foundations/03-eval
 This mini project gives Week 3 a production-minded loop: small eval set, baseline vs candidate
 comparison, release gate decision, structured trace records, and a simple readiness summary.
 
+Run the commands below from an activated project venv.
+
 ## What You Will Build
 
 | Capability                       | Output                       |
@@ -21,13 +23,13 @@ comparison, release gate decision, structured trace records, and a simple readin
 cd docs/03-mini-projects/code/week03-eval-observability
 
 # Compare baseline vs candidate
-python3 cli.py compare
+python cli.py compare
 
 # Evaluate one run with trace data
-python3 cli.py run --name candidate
+python cli.py run --name candidate
 
 # Run tests
-python3 -m pytest tests/ -v
+python -m pytest tests/ -v
 ```
 
 ## Portfolio Structure

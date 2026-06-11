@@ -15,7 +15,9 @@ Standalone MkDocs site for interview-focused learning in AI Engineer, Agentic AI
 ## Quick Start
 
 ```bash
-cd "/Users/nchaur590@cable.comcast.com/Programming/RAG-LearningTutorial/playbook-site"
+python3 -m venv .venv
+
+source .venv/bin/activate
 pip install -r requirements.txt
 mkdocs serve
 ```
@@ -25,6 +27,7 @@ Open `http://127.0.0.1:8000`.
 ## Build
 
 ```bash
+source .venv/bin/activate
 cd "/Users/nchaur590@cable.comcast.com/Programming/RAG-LearningTutorial/playbook-site"
 mkdocs build
 ```

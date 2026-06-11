@@ -6,6 +6,8 @@ This mini project gives Week 2 a stateful workflow you can inspect and extend. I
 validation, approval gates, retries, escalation, and trace logging using deterministic Python so you
 can focus on reliability behavior before adding an LLM.
 
+Run the commands below from an activated project venv.
+
 ## What You Will Build
 
 | Capability             | Output                         |
@@ -22,13 +24,13 @@ can focus on reliability behavior before adding an LLM.
 cd docs/03-mini-projects/code/week02-agent-reliability
 
 # High-risk action with approval gate
-python3 cli.py cancel_subscription --user-id user-42 --subscription-id sub-101
+python cli.py cancel_subscription --user-id user-42 --subscription-id sub-101
 
 # Simulate retry path
-python3 cli.py cancel_subscription --user-id user-42 --subscription-id sub-101 --fail-once
+python cli.py cancel_subscription --user-id user-42 --subscription-id sub-101 --fail-once
 
 # Run tests
-python3 -m pytest tests/ -v
+python -m pytest tests/ -v
 ```
 
 ## Portfolio Structure
